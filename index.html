@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Timelapse+ VIEW Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" />
+        <div class="lang-selector">
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='http://app.view.tl' target='_blank'>app.view.tl</a></li>
+            <li><a href='http://www.timelapseplus.com' target='_blank'>www.timelapseplus.com</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="content">
+        
+          <h1 id="introduction">Introduction</h1>
+
+<p>Welcome!  This is the official documentation for the VIEW Intervalometer by Timelapse+.  You can scroll through the entire document or click on the links on the left to jump to a specific section.  If you find errors or if parts are confusing, contact me via http://www.timelapseplus.com/contact or make the correction yourself and send a pull request with github here: https://github.com/timelapseplus/view-manual</p>
+
+          <h1 id="overview-and-operation">Overview and Operation</h1>
+
+<h2 id="power-and-buttons">Power and Buttons</h2>
+
+<p><img alt="Front Overview" src="images/view-overview-front.png" /></p>
+
+<h3 id="power-on">Power On</h3>
+
+<p>To power on the VIEW, press and hold the Power button <code class="prettyprint">(#1)</code> for 2 seconds.  In a few seconds the button will illuminate red, indicating that it&rsquo;s booting.  The VIEW logo will appear on the screen shortly thereafter. </p>
+
+<h3 id="power-off">Power Off</h3>
+
+<p>To power off the VIEW, press and hold the Power button <code class="prettyprint">(#1)</code> for 2 seconds.  A confirmation prompt will appear on the screen.  Turn the knob to select &ldquo;Yes&rdquo; and 
+press the knob or the Enter button <code class="prettyprint">(#5)</code> to power off.</p>
+
+<p>If the VIEW is not responsive, it can be forced off by pressing holding the Power button <code class="prettyprint">(#1)</code> for 15 seconds.  It can then be booted normally by pressing the Power button again for 2 seconds.</p>
+
+<h3 id="operation">Operation</h3>
+
+<p>The user interface for the VIEW is a menu based system designed to be simple to operate outdoors and with gloves.  For that reason, there&rsquo;s no touchscreen, but rather simple buttons and a knob for scrolling through options.  Use the knob to scroll up and down through the menus.  To select open or select the highlighted menu item, press the knob or the Enter button <code class="prettyprint">(#5)</code>.  To go back or cancel, press the Cancel button <code class="prettyprint">(#4)</code>.  Some screens use the Context <code class="prettyprint">(#6)</code> button for additional options indicated on the screen.</p>
+
+<aside class="success">Every menu item has an accompanying help screen &ndash; press the Power button (#1) to activated for the current selection.  Power the Power button (#1) or the Cancel button (#4) to exit the help screen.</aside>
+
+<h3 id="gesture-sensor">Gesture Sensor</h3>
+
+<p>The Gesture Sensor <code class="prettyprint">(#2)</code> becomes active after no buttons have been pressed for at least a minute.  Then, wave your hand across the front to activate, the wave to the right to preview the current/last time-lapse, or to the left to cancel.  This feature may not yet be reliable on all units as it needs to be calibrated to the case.  This will be corrected in an upcoming firmware update.</p>
+
+<h2 id="ports-and-connections">Ports and Connections</h2>
+
+<p><img alt="Front Overview" src="images/view-overview-side.png" /></p>
+
+<h3 id="charging">Charging</h3>
+
+<p>To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port <code class="prettyprint">(#12)</code> on the VIEW.  When connected the Charge Indicator <code class="prettyprint">(#11)</code> will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings-&gt;Charge Indicator.</p>
+
+<h3 id="auxiliary-ports">Auxiliary Ports</h3>
+
+<p>The VIEW includes 2 2.5mm TRS auxiliary ports <code class="prettyprint">(#9, #10)</code> for motion sync, shutter cable triggering and external integrations.  These are not yet made use of in the current firmware, but leave room for future expansion.</p>
+
+<h3 id="sd-card">SD Card</h3>
+
+<p>The SD card slot <code class="prettyprint">(#8)</code> provides a convenient way to get data from the VIEW.  The VIEW can also save the RAW time-lapse images to the SD card &ndash; this is the most convenient way for post processing, since each time-lapse is named sequentially in its own folder along with the XMP files for automatic deflickering in Lightroom.</p>
+
+<h3 id="usb-host">USB Host</h3>
+
+<p>The VIEW includes a full-size USB host port <code class="prettyprint">(#13)</code> for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX via USB, and multiple camera support is planned for the future).</p>
+
+<h2 id="hooking-up-the-camera">Hooking up the camera</h2>
+
+<h3 id="hotshoe-mount">Hotshoe Mount</h3>
+
+<p>The VIEW can be conveniently connected to the top of the camera by sliding it onn the camera&rsquo;s hotshoe.  This also provides PC-sync feedback for bulb ramping without requiring an additional cable, however, the current exposure ramping mode does not use this, so you can mount the VIEW anywhere without affecting the performance.</p>
+
+<h3 id="usb-connection">USB Connection</h3>
+
+<p>Connect the appropriate USB cable for your camera from the Host Port <code class="prettyprint">(#13)</code> to your camera&rsquo;s USB port.  It&rsquo;s best to have the camera powered on before connecting, as there seems to be an occasional timing issue causing the camera to not properly connect if powered on while connected.  If the camera doesn&rsquo;t seem to connect, unplug the USB and reconnect.  Sony cameras can be quite flaky &ndash; if you&rsquo;re having trouble, try removing the battery from the camera, powering it back on, and then plugging in the USB to the VIEW again.</p>
+
+<p>Some cameras need to be set to &ldquo;PC Connect&rdquo; or &ldquo;PTP Mode&rdquo; in order for USB to function properly.  Also, some Canon cameras with WiFi (like the 6D) require WiFi to be disabled for USB control to work.</p>
+
+<p>Only the USB cable is needed for full ramping support.  No other connections are necessary.</p>
+
+          <h1 id="time-lapse-setup">Time-lapse Setup</h1>
+
+<p>Start by connecting the camera via USB as described in the previous section.  This will enable the Time-lapse menu (the first item on the main screen).  Press the knob or enter button to select.  You&rsquo;ll then see the options listed in this section.</p>
+
+<h3 id="quick-setup-for-the-first-test">Quick Setup for the first test</h3>
+
+<p>For your first automatic ramping test, I recommend to start with the following configuration:</p>
+
+<table><thead>
+<tr>
+<th>Setting</th>
+<th>Recommended Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Exposure</td>
+<td>Just setup the camera for the current scene before hand and skip this step</td>
+</tr>
+<tr>
+<td>Timelapse Mode</td>
+<td>Auto Ramping</td>
+</tr>
+<tr>
+<td>Interval Mode</td>
+<td>Auto Variable</td>
+</tr>
+<tr>
+<td>Day Interval</td>
+<td>8 seconds</td>
+</tr>
+<tr>
+<td>Night Interval</td>
+<td>40 Seconds</td>
+</tr>
+<tr>
+<td>Destination</td>
+<td>SD Card (you have to first put an SD card in the VIEW)</td>
+</tr>
+</tbody></table>
+
+<p>I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it&rsquo;s not overexposed!</p>
+
+<p>Then, let it run at least 3 hours after sunset to get a good length and transition.  Or, if you have external power for the camera, go all night until sunrise!</p>
+
+<h3 id="time-lapse-options-are-described-below">Time-lapse options are described below</h3>
+
+<h2 id="exposure">Exposure</h2>
+
+<p>Puts the camera in liveview mode for adjusting the exposure and focus. Turn the knob to increase/decrease exposure.  Press the enter button to toggle focus mode.  When in focus mode, the liveview image will be cropped to 100%, and the knob will then adjust focus rather than exposure.*</p>
+
+<aside class="notice">NOTE: the Exposure feature doesn&rsquo;t work on all cameras, particularly Sony.  In this case simply adjust the exposure and focus on the camera before connecting the VIEW.  Additionally, this mode is still in development &ndash; if you have trouble, just setup the exposure in the camera.</aside>
+
+<aside class="success">Whether setup via the Exposure menu or in camera, the starting exposure for ramping is very important as it is used for a reference throughout the time-lapse.  Make sure it is not over-exposed, as excessive clipped (overexposed highlights) regions of the image can cause the exposure ramping to be inaccurate.</aside>
+
+<h2 id="timelapse-mode">Timelapse Mode</h2>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Fixed</td>
+<td>This is for a basic time-lapse where the exposure and interval are constant throughout</td>
+</tr>
+<tr>
+<td>Auto Ramping</td>
+<td>In this mode the VIEW will automatically adjust the exposure to match changing light conditions</td>
+</tr>
+</tbody></table>
+
+<p>For short time-lapse clips during the day or night where the exposure and interval are constant, choose Fixed.</p>
+
+<p>For sunsets, sunrises, day to night, night to day, and day to night to day, choose Auto Ramping.  This will also enable the Auto Interval options for interval ramping between day and night.</p>
+
+<h2 id="interval-mode">Interval Mode</h2>
+
+<p>This option is only shown when Timelapse Mode is set to &lsquo;Auto Ramping&rsquo;</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Fixed Length</td>
+<td>This maintains the same interval through out the time-lapse and will limit the maximum shutter speed to fit within it</td>
+</tr>
+<tr>
+<td>Auto Variable</td>
+<td>This mode will automatically ramp between a Day Interval and a Night Interval and allows for longer shutter speeds at night</td>
+</tr>
+</tbody></table>
+
+<h2 id="interval">Interval</h2>
+
+<p>This option is only shown when Timelapse Mode is set to &#39;Fixed&rsquo; or Interval Mode is set to &#39;Fixed&rsquo;</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>[time in seconds]</td>
+<td>Interval length in seconds.  This is the time between the start of one frame to the start of the next</td>
+</tr>
+</tbody></table>
+
+<h2 id="day-interval">Day Interval</h2>
+
+<p>This option is only shown when Timelapse Mode is set to &#39;Auto Ramping&rsquo; and Interval Mode is set to &#39;Auto Variable&rsquo;</p>
+
+<p>This determines the interval length during daylight, based on the camera&rsquo;s exposure settings.  It will be smoothly ramped to/from the Night Interval as the ambient conditions (and camera exposure) change.</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>[time in seconds]</td>
+<td>Interval length in seconds.  This is the time between the start of one frame to the start of the next</td>
+</tr>
+</tbody></table>
+
+<h2 id="night-interval">Night Interval</h2>
+
+<p>This option is only shown when Timelapse Mode is set to &#39;Auto Ramping&rsquo; and Interval Mode is set to &#39;Auto Variable&rsquo;</p>
+
+<p>This determines the interval length during the night, based on the camera&rsquo;s exposure settings.  It will be smoothly ramped to/from the Day Interval as the ambient conditions (and camera exposure) change.</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>[time in seconds]</td>
+<td>Interval length in seconds.  This is the time between the start of one frame to the start of the next</td>
+</tr>
+</tbody></table>
+
+<h2 id="destination">Destination</h2>
+
+<p>This option is only shown when an SD card is inserted in the VIEW.</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Camera</td>
+<td>Keep images on the camera&rsquo;s card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon).</td>
+</tr>
+<tr>
+<td>SD Card</td>
+<td>Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images.</td>
+</tr>
+</tbody></table>
+
+<h2 id="start">START</h2>
+
+<p>If you have all the settings entered, select this option to start the time-lapse!  While it&rsquo;s running, you can select &ldquo;Preview&rdquo; to review the results in process, or select &ldquo;RUNNING&rdquo; for a cancellation confirmation.  This status screen is still in its most basic state and will be improved in a future release.</p>
+
+      </div>
+    </div>
+  </body>
+</html>
