@@ -49,7 +49,7 @@ The VIEW includes a full-size USB host port `(#13)` for connecting the camera.  
 
 ### Hotshoe Mount
 
-The VIEW can be conveniently connected to the top of the camera by sliding it onn the camera's hotshoe.  This also provides PC-sync feedback for bulb ramping without requiring an additional cable, however, the current exposure ramping mode does not use this, so you can mount the VIEW anywhere without affecting the performance.
+The VIEW can be conveniently connected to the top of the camera by sliding it on the camera's hotshoe.  This also provides PC-sync feedback for bulb ramping without requiring an additional cable, however, the current exposure ramping mode does not use this, so you can mount the VIEW anywhere without affecting the performance.
 
 ### USB Connection
 
