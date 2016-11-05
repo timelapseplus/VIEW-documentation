@@ -59,6 +59,15 @@ Option | Description
 [time in seconds] | Interval length in seconds.  This is the time between the start of one frame to the start of the next
 
 
+## Frames
+
+This option is only shown when Timelapse Mode is set to 'Fixed'. In Auto Ramping mode, the VIEW always runs until stopped.
+
+Option | Description
+------ | -------
+[number of frames] | Number of exposures to complete before stopping
+
+
 ## Day Interval
 
 This option is only shown when Timelapse Mode is set to 'Auto Ramping' and Interval Mode is set to 'Auto Variable'
