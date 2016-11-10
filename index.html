@@ -116,7 +116,7 @@
     <div class="page-wrapper">
       <div class="content">
         
-          <h1 id="introduction">Introduction</h1>
+          <h1 id="timelapse-view">Timelapse+ VIEW</h1>
 
 <p>Welcome!  This is the official documentation for the VIEW Intervalometer by Timelapse+.  You can scroll through the entire document or click on the links on the left to jump to a specific section.  If you find errors or if parts are confusing, contact me via <a href="http://www.timelapseplus.com/contact">http://www.timelapseplus.com/contact</a> or make the correction yourself and send a pull request with github here: <a href="https://github.com/timelapseplus/VIEW-documentation">https://github.com/timelapseplus/VIEW-documentation</a></p>
 
@@ -368,6 +368,85 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <h2 id="start">START</h2>
 
 <p>If you have all the settings entered, select this option to start the time-lapse!  While it&rsquo;s running, you can select &ldquo;Preview&rdquo; to review the results in process, or select &ldquo;RUNNING&rdquo; for a cancellation confirmation.  This status screen is still in its most basic state and will be improved in a future release.</p>
+
+          <h1 id="remote-app">Remote App</h1>
+
+<p>The VIEW Intervalometer can be controlled and monitored via a web-based app for mobile devices.  Anything with a web browser can access it, but it&rsquo;s only optimized for mobile-sized screens.  There is no app publish in an app store at this point, rather, it is loaded directly from the VIEW itself.</p>
+
+<p>There are two methods for connecting to the VIEW from a mobile device, a local WiFi method, and an internet method.</p>
+
+<h3 id="local-method-pros">Local Method Pros:</h3>
+
+<ul>
+<li>No Internet require, works in remote locations</li>
+<li>Low-latency connections, great with streaming liveview during setup</li>
+</ul>
+
+<h3 id="local-method-cons">Local Method Cons:</h3>
+
+<ul>
+<li>Only works within WiFi range of the VIEW</li>
+<li>Internet will not function on the mobile device while connected to the VIEW</li>
+</ul>
+
+<h3 id="web-method-pros">Web Method Pros:</h3>
+
+<ul>
+<li>Access the VIEW from anywhere in the world!</li>
+<li>Mobile device can be connected to the internet as usual</li>
+</ul>
+
+<h3 id="web-method-cons">Web Method Cons:</h3>
+
+<ul>
+<li>The VIEW needs to be within range of a WiFi access point for internet (you could use a mobile hotspot)</li>
+<li>Higher latency so you&rsquo;ll see some lag with liveview</li>
+</ul>
+
+<h2 id="local-wifi-method">Local Wifi Method</h2>
+
+<p><img alt="WiFi Setup Diagram" src="images/view-app-wifi.png" /></p>
+
+<p>To configure the local WiFi app interface, setup the following on the VIEW:</p>
+
+<ol>
+<li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
+<li>Enable Access Point Mode: Settings -&gt; Wireless Setup -&gt; Enable TL+VIEW AP (if this setting is missing it means it&rsquo;s already enabled)</li>
+</ol>
+
+<p>Then, on the mobile device:</p>
+
+<ol>
+<li>Connect to the TL+VIEW WiFi access point</li>
+<li>Open a web browser and go to 10.0.0.1</li>
+</ol>
+
+<p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
+
+<aside class="notice">NOTE:  There&rsquo;s currently a bug in the firmware that causes this method to sometimes not fully load the app.  I&rsquo;m working on it and should have it resolved within the week</aside>
+
+<h2 id="remote-internet-method">Remote Internet Method</h2>
+
+<p><img alt="Web Setup Diagram" src="images/view-app-web.png" /></p>
+
+<p>To configure the remote web app interface, setup the following on the VIEW:</p>
+
+<ol>
+<li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
+<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to AP</li>
+<li>Once the VIEW connects (only the first time), a number will appear on the screen.  You&rsquo;ll need this for step 4 below.</li>
+</ol>
+
+<p>Then, on the mobile device:</p>
+
+<ol>
+<li>Open a web browser and go to app.view.tl</li>
+<li>Login using your email address.  If you need to register, you&rsquo;ll be asked to create a subdomain (for access as yoursubdomain.view.tl) and a password</li>
+<li>Once logged in, if this is your first time, press &lsquo;Add Device&rsquo; (if you&rsquo;ve done this before, you don&rsquo;t need to again)</li>
+<li>Enter the numbers displayed on the VIEW screen</li>
+</ol>
+
+<p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
 
       </div>
     </div>
