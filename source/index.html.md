@@ -9,6 +9,7 @@ includes:
   - intro
   - overview
   - timelapse
+  - app
 
 search: true
 
