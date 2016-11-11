@@ -42,7 +42,7 @@ Then, on the mobile device:
 
 That's it -- the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.
 
-<aside class="notice">NOTE:  There's currently a bug in the firmware that causes this method to sometimes not fully load the app.  I'm working on it and should have it resolved within the week</aside>
+<aside class="notice">NOTE:  There's currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed in version v1.0.3</aside>
 
 
 ## Remote Internet Method
