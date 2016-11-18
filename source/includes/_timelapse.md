@@ -2,6 +2,8 @@
 
 Start by connecting the camera via USB as described in the previous section.  This will enable the Time-lapse menu (the first item on the main screen).  Press the knob or enter button to select.  You'll then see the options listed in this section.
 
+<aside class="notice">IMPORTANT: the camera must be in manual mode, set to capture in RAW (not RAW+JPEG)</aside>
+
 ### Quick Setup for the first test
 For your first automatic ramping test, I recommend to start with the following configuration:
 
