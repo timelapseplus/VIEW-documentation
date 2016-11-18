@@ -53,7 +53,8 @@ To configure the remote web app interface, setup the following on the VIEW:
 
 1. Enable WiFi (if it's not already): Settings -> Wireless Setup -> Enable Wifi
 2. Connect to a nearby access point: Settings -> Wireless Setup -> Connect to AP
-3. Once the VIEW connects (only the first time), a number will appear on the screen.  You'll need this for step 4 below.
+3. Enter the password for the network if necessary (make sure it's entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.
+4. Once the VIEW connects (only the first time), a number will appear on the screen.  You'll need this for step 4 below.
 
 Then, on the mobile device:
 

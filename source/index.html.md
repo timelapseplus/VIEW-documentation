@@ -10,6 +10,7 @@ includes:
   - overview
   - timelapse
   - app
+  - firmware
 
 search: true
 
