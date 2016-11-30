@@ -11,6 +11,7 @@ includes:
   - timelapse
   - app
   - firmware
+  - cameras
 
 search: true
 
