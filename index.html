@@ -481,6 +481,37 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>Firmware updates will either fail or succeed &ndash; it won&rsquo;t get stuck in a corrupted state.  That said, it&rsquo;s possible for it to hang when downloading if there&rsquo;s a network interruption (working on fixing this).  If after 15 minutes or so the VIEW still says it&rsquo;s downloading the firmware, it may need a force-restart.  Hold the power button for fifteen seconds to power down, then 2 seconds to boot it back up.  It will load the old firmware version, and then you can try again to update.  A future update will provide better error handling &amp; reporting and progress reporting (like a progress bar for the download).</p>
 
+          <h1 id="camera-specific-notes">Camera-Specific Notes</h1>
+
+<p>This section includes notes and issues specific to certain camera bodies.  Camera-specific issues will be corrected in firmware when possible and removed from this section once resolved.</p>
+
+<h2 id="notes-for-all-cameras">Notes for all cameras</h2>
+
+<ul>
+<li>Manual mode</li>
+<li>A native ISO setting (not Auto)</li>
+<li>Save as RAW (not RAW+JPEG)</li>
+<li>Focus should be manual or back-button (if the shutter button activates focus it can cause issues)</li>
+<li>It&rsquo;s best to disable image stabilization</li>
+</ul>
+
+<h2 id="sony-alpha">Sony Alpha</h2>
+
+<p>Sony cameras can work well, but there are several things that the VIEW currently does not enforce but must be set in the camera for it to work.</p>
+
+<p>Setup the following on the camera:</p>
+
+<p>1) USB Mode set to &lsquo;PC Remote&rsquo;
+2) RAW files (not JPEG or RAW+JPEG)
+3) Manual mode, in a native ISO (not the ISO numbers with a line over them, nor auto ISO)
+4) Focus set to manual (the back button still works for autofocus, but this prevents it from trying to focus on every shot)</p>
+
+<p>On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera&rsquo;s card while it&rsquo;s connected via USB.</p>
+
+<p>Also, on the VIEW, don&rsquo;t use the exposure menu (Sony doesn&rsquo;t support liveview), instead setup the exposure using the camera.</p>
+
+<p>The Sony A7RII needs longer intervals due to the large file size.  12 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.</p>
+
       </div>
     </div>
   </body>
