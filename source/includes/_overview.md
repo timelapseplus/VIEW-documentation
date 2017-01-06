@@ -23,7 +23,7 @@ The user interface for the VIEW is a menu based system designed to be simple to 
 
 ### Gesture Sensor
 
-The Gesture Sensor `(#2)` becomes active after no buttons have been pressed for at least a minute.  Then, wave your hand across the front to activate, the wave to the right to preview the current/last time-lapse, or to the left to cancel.  This feature may not yet be reliable on all units as it needs to be calibrated to the case.  This will be corrected in an upcoming firmware update.
+The Gesture Sensor `(#2)` while a time-lapse is running and the screen goes blank.  Wave your hand across the front to activate, then wave to the right to preview the current/last time-lapse, or to the left to cancel.  While the preview is playing, wave to the right to skip ahead 10 seconds.
 
 ## Ports and Connections
 
@@ -31,11 +31,11 @@ The Gesture Sensor `(#2)` becomes active after no buttons have been pressed for 
 
 ### Charging
 
-To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port `(#12)` on the VIEW.  When connected the Charge Indicator `(#11)` will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings->Charge Indicator.
+To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port `(#12)` on the VIEW.  When connected the Charge Indicator `(#11)` will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings->Charge Indicator.  Note that the battery indicator in the VIEW will prematurely show a low battery, and if charging a completely dead battery, it can take some time before progress becomes visible.
 
 ### Auxiliary Ports
 
-The VIEW includes 2 2.5mm TRS auxiliary ports `(#9, #10)` for motion sync, shutter cable triggering and external integrations.  These are not yet made use of in the current firmware, but leave room for future expansion.
+The VIEW includes two 2.5mm TRS auxiliary ports `(#9, #10)` for motion sync, shutter cable triggering and external integrations.  Currently only AUX2 is used by the firmware.  It will send a pulse to trigger motion systems to move after each shot during a time-lapse (no setup necessary for this), or it can be used as an external trigger for the interval when the time-lapse interval is set to "External".
 
 ### SD Card
 
