@@ -11,7 +11,7 @@ Send me a message through the contact page here and I'll get in touch ASAP: <htt
 Make sure to include the firmware version on the VIEW (seen on the top bar before a camera is connected) as well as the camera model.
 
 ### Sending time-lapse log files to support
-If a problem occurs during a time-lapse, sending the error log will help in quickly identifing and solving the core cause.  Here are the steps to take (firmware v1.5.0 or newer is required for this):
+If a problem occurs during a time-lapse, sending the error log will help in quickly identifying and solving the core cause.  Here are the steps to take (firmware v1.5.0 or newer is required for this):
 
 - From the main menu, go to Time-lapse Clips
 - Select the problematic clip
@@ -23,7 +23,7 @@ It will then upload the report next time it's connected via view.tl.
 If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
 ### Trouble with a particular camera
-If a particular camera is not working, it might not be fully supported.  You can help provide the info needed for adding support by doig the following (firmware v1.5.0 or newer is required for this):
+If a particular camera is not working, it might not be fully supported.  You can help provide the info needed for adding support by doing the following (firmware v1.5.0 or newer is required for this):
 
 - Connect the camera to the VIEW
 - Go to Settings, then select "Send camera report"
