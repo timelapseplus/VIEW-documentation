@@ -3,10 +3,10 @@
 Hopefully your experience with the VIEW is smooth and issue-free, but should there be a problem, don't worry -- we're here to help!  Reporting issues helps to improve the product for everyone, so there are some systems in place to help with this.
 
 ### Questions on the best settings to use?
-Check out the facebook group to learn from other users and share ideas: https://www.facebook.com/groups/395686464095972/
+Check out the facebook group to learn from other users and share ideas: <https://www.facebook.com/groups/395686464095972/>
 
 ### Need help not covered here?
-Send me a message through the contact page here and I'll get in touch ASAP: http://www.timelapseplus.com/contact/
+Send me a message through the contact page here and I'll get in touch ASAP: <http://www.timelapseplus.com/contact/>
 
 Make sure to include the firmware version on the VIEW (seen on the top bar before a camera is connected) as well as the camera model.
 
@@ -20,7 +20,7 @@ If a problem occurs during a time-lapse, sending the error log will help in quic
 
 It will then upload the report next time it's connected via view.tl.
 
-If you send a report, let me know more details by sending a message here: http://www.timelapseplus.com/contact/
+If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
 ### Trouble with a particular camera
 If a particular camera is not working, it might not be fully supported.  You can help provide the info needed for adding support by doig the following (firmware v1.5.0 or newer is required for this):
@@ -30,7 +30,7 @@ If a particular camera is not working, it might not be fully supported.  You can
 
 It will then take an image, gather information about the camera, and upload it via view.tl next time you're connected.  The image will not be sent -- only the associated data and error log.
 
-If you send a report, let me know more details by sending a message here: http://www.timelapseplus.com/contact/
+If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
 ### Trouble Connecting to Wifi
 Currently, it does not connect to Apple brand wifi routers.  This is being researched and will hopefully be resolved soon.  Other users have reported that creating a guest network on the Apple router works for connecting the VIEW.
