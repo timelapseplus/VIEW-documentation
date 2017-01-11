@@ -27,11 +27,3 @@ Also, on the VIEW, don't use the exposure menu (Sony doesn't support liveview), 
 
 The Sony A7RII needs longer intervals due to the large file size.  12 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.
 
-## Canon EOS 5DmkIV, 80D & 1DxII
-
-* Only able to save to the VIEW SD at present
-
-These cameras are all in the same generation where Canon has made some significant changes to the USB protocol and they're not yet fully supported.  With the latest firmware, saving to the camera causes errors, however, saving to the VIEW's SD card will fully work.
-
-This should be resolved soon to support saving to either the camera or the SD card.
-
