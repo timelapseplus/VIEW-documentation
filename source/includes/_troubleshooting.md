@@ -36,3 +36,5 @@ If you send a report, let me know more details by sending a message here: <http:
 Currently, it does not connect to Apple brand wifi routers.  This is being researched and will hopefully be resolved soon.  Other users have reported that creating a guest network on the Apple router works for connecting the VIEW.
 
 Also, if it fails to connect, try disabling wifi, enabling it again, then reconnecting making sure the password is correct (it's case-sensitive).
+
+Also, if firmware updates fail to download, make sure Bluetooth is disabled in Settings->Wireless Setup, as this can sometimes cause issues.

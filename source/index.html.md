@@ -12,6 +12,7 @@ includes:
   - app
   - firmware
   - cameras
+  - motion
   - troubleshooting
 
 search: true

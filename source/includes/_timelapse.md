@@ -91,6 +91,23 @@ Option | Description
 ------ | -------
 [time in seconds] | Interval length in seconds.  This is the time between the start of one frame to the start of the next
 
+
+## Ramping Options
+
+This option is only shown when Timelapse Mode is set to 'Auto Ramping'.
+
+In this menu, there are a few settings to configuring the limits of auto ramping.  Note that these options can limit the range of ramping and thereby cause it to not reach a proper exposure if too limited.  For most cameras, a max ISO of 6400 does well, with a lower ISO limit of 100 (best to only use native ISOs, not lower).
+
+The Night Exposure setting defines how much less exposed "night" should be, relative to "day".  For example, a night exposure of -1 (the default), will underexposure a night scene by 1 stop compared to the day.  So, if an auto ramp is started during the day, and by night the exposure it too light, a lower night exposure is needed.  Or, if the images after sunset are too dark, a higher value should be used.  A Night Exposure setting of 0 will keep the day and night perceived luminosity the same.
+
+Option | Description
+------ | -------
+Night Exposure | Relative exposure difference for night vs. day
+Maximum ISO | Upper ISO limit for auto ramping
+Minimum ISO | Lower ISO limit for auto ramping
+Max Shutter | Longest shutter speed to use during ramping
+
+
 ## Destination
 
 This option is only shown when an SD card is inserted in the VIEW.
