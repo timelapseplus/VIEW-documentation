@@ -349,6 +349,38 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 </tbody></table>
 
+<h2 id="ramping-options">Ramping Options</h2>
+
+<p>This option is only shown when Timelapse Mode is set to &#39;Auto Ramping&rsquo;.</p>
+
+<p>In this menu, there are a few settings to configuring the limits of auto ramping.  Note that these options can limit the range of ramping and thereby cause it to not reach a proper exposure if too limited.  For most cameras, a max ISO of 6400 does well, with a lower ISO limit of 100 (best to only use native ISOs, not lower).</p>
+
+<p>The Night Exposure setting defines how much less exposed &ldquo;night&rdquo; should be, relative to &ldquo;day&rdquo;.  For example, a night exposure of -1 (the default), will underexposure a night scene by 1 stop compared to the day.  So, if an auto ramp is started during the day, and by night the exposure it too light, a lower night exposure is needed.  Or, if the images after sunset are too dark, a higher value should be used.  A Night Exposure setting of 0 will keep the day and night perceived luminosity the same.</p>
+
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Night Exposure</td>
+<td>Relative exposure difference for night vs. day</td>
+</tr>
+<tr>
+<td>Maximum ISO</td>
+<td>Upper ISO limit for auto ramping</td>
+</tr>
+<tr>
+<td>Minimum ISO</td>
+<td>Lower ISO limit for auto ramping</td>
+</tr>
+<tr>
+<td>Max Shutter</td>
+<td>Longest shutter speed to use during ramping</td>
+</tr>
+</tbody></table>
+
 <h2 id="destination">Destination</h2>
 
 <p>This option is only shown when an SD card is inserted in the VIEW.</p>
@@ -526,6 +558,34 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>This should be resolved soon to support saving to either the camera or the SD card.</p>
 
+          <h1 id="motion-control">Motion Control</h1>
+
+<p>The VIEW is able to synchronize with most motion control systems for shoot-move-shoot functionality.  In addition it has full motion programming support for the Dynamic Perception NMX stepper controller (via Bluetooth or USB), with support for the eMotimo Spectrum (via AUX2 serial) and Syrp Genie Mini (via Bluetooth) to come soon.</p>
+
+<h2 id="aux-out-sync">AUX Out Sync</h2>
+
+<p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse after the completion of each shot.</p>
+
+<h2 id="external-trigger">External Trigger</h2>
+
+<p>If the motion system does not support an external auxiliary sync (like the Syrp Genie), the VIEW can use the camera trigger from the motion system to trigger each frame.  In this mode, the interval is defined externally by the motion system.</p>
+
+<p>To use an external trigger, set the Interval Mode to &lsquo;External AUX2&rsquo; in the time-lapse setup menu.  Connect the motion system&rsquo;s camera port to the VIEW&rsquo;s AUX2 port.</p>
+
+<h2 id="nmx-controller">NMX Controller</h2>
+
+<p>In addition to the above methods, the NMX can be connected via USB or Bluetooth for full motion programming.  Motion programming must be done via the mobile app for the VIEW as it is not currently supported by the standalone interface.</p>
+
+<h3 id="nmx-bluetooth-connection">NMX Bluetooth Connection</h3>
+
+<p>To connect the NMX via Bluetooth, first enable Bluetooth on the VIEW in Settings-&gt;Wireless Setup-&gt;Enable Bluetooth.  The VIEW must be restarted after enabling Bluetooth (this will be fixed in the future so the restart is not necessary).  With Bluetooth enabled, the VIEW will automatically connect to the first available NMX controller.</p>
+
+<h3 id="nmx-usb-connection">NMX USB Connection</h3>
+
+<p>To connect to the NMX via USB, a USB hub is needed for the additional USB port (one for the camera, one for the NMX).  Connect a small USB hub to the VIEW, then connect the camera and the NMX to the hub, then connect power to the NMX (in this order!).</p>
+
+<p>Important: the NMX must first be connected via USB, then external power &ndash; if the NMX is powered on before connecting USB, it won&rsquo;t be detected.</p>
+
           <h1 id="troubleshooting-amp-support">Troubleshooting &amp; Support</h1>
 
 <p>Hopefully your experience with the VIEW is smooth and issue-free, but should there be a problem, don&rsquo;t worry &ndash; we&rsquo;re here to help!  Reporting issues helps to improve the product for everyone, so there are some systems in place to help with this.</p>
@@ -573,6 +633,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <p>Currently, it does not connect to Apple brand wifi routers.  This is being researched and will hopefully be resolved soon.  Other users have reported that creating a guest network on the Apple router works for connecting the VIEW.</p>
 
 <p>Also, if it fails to connect, try disabling wifi, enabling it again, then reconnecting making sure the password is correct (it&rsquo;s case-sensitive).</p>
+
+<p>Also, if firmware updates fail to download, make sure Bluetooth is disabled in Settings-&gt;Wireless Setup, as this can sometimes cause issues.</p>
 
       </div>
     </div>
