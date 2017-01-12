@@ -23,6 +23,8 @@ It will then upload the report next time it's connected via view.tl.
 If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
 ### Trouble with a particular camera
+First, try a different USB cable if possible -- Sony cameras seem to be especially picky.
+
 If a particular camera is not working, it might not be fully supported.  You can help provide the info needed for adding support by doing the following (firmware v1.5.0 or newer is required for this):
 
 - Connect the camera to the VIEW
