@@ -27,3 +27,6 @@ Also, on the VIEW, don't use the exposure menu (Sony doesn't support liveview), 
 
 The Sony A7RII needs longer intervals due to the large file size.  12 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.
 
+## Nikon
+
+Many (all?) Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.
