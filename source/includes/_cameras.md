@@ -30,3 +30,15 @@ The Sony A7RII needs longer intervals due to the large file size.  12 seconds sh
 ## Nikon
 
 Many (all?) Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.
+
+## Camera Support Overview
+
+Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
+------------|--------------|---------------|----------|----------------- 
+Nikon DSLRs | Yes          | Yes, most     | Yes, most| 5-6s
+Canon DSLRs | Yes          | Yes, most     | Yes, most| 5-6s
+Sony A7, A6000, A7S | Yes   | No            | No       | 8-10s
+Sony A7R    | Yes          | No            | No       | 12-14s
+Sony A7RII  | Yes          | No            | Yes      | 12-14s
+Sony A7II, A6300, A6500, A7SII | Yes   | No            | Yes       | 8-10s
+Panasonic GH3, GH4 | Yes          | No     | No | 6-8s
