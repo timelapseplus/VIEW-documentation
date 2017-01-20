@@ -108,6 +108,17 @@ Minimum ISO | Lower ISO limit for auto ramping
 Max Shutter | Longest shutter speed to use during ramping
 
 
+## Manual Aperture
+
+This option is only shown when the aperture setting of the lens cannot be read from the camera, such as when using a manual lens or the lens-twist method.
+
+Enter the aperture setting of the lens here to aid in the calculation of absolute exposure values to aid in day/night feathering of interval and exposure compensation.
+
+Option | Description
+------ | -------
+[aperture] | Aperture value that the lens is set to or locked on (in the case of lens-twist)
+
+
 ## Destination
 
 This option is only shown when an SD card is inserted in the VIEW.
