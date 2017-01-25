@@ -31,6 +31,10 @@ The Sony A7RII needs longer intervals due to the large file size.  12 seconds sh
 
 Many (all?) Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.
 
+## Panasonic
+
+Make sure the USB mode on the camera is set to PTP
+
 ## Camera Support Overview
 
 Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
