@@ -22,7 +22,7 @@ It will then upload the report next time it's connected via view.tl.
 
 If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
-<aside class="notice">NOTE: In order for log files to upload, the VIEW device must be setup for the remote app (paired with your account on app.view.tl). If you haven't already done this, please see <http://docs.view.tl/#remote-internet-method>.  Once it's paired, any queued logs will be uploaded automatically.</aside>
+<aside class="notice">NOTE: In order for log files to upload, the VIEW device must be setup for the remote app (paired with your account on app.view.tl). If you haven't already done this, please see <a href="#remote-internet-method">the remote app setup page</a>.  Once it's paired, any queued logs will be uploaded automatically.</aside>
 
 ### Trouble with a particular camera
 First, try a different USB cable if possible -- Sony cameras seem to be especially picky.
