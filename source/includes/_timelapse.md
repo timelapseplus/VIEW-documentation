@@ -27,7 +27,7 @@ Then, let it run at least 3 hours after sunset to get a good length and transiti
 Puts the camera in liveview mode for adjusting the exposure and focus. Turn the knob to increase/decrease exposure.  Press the enter button to toggle focus mode.  When in focus mode, the liveview image will be cropped to 100%, and the knob will then adjust focus rather than exposure.*
 
 
-<aside class="notice">NOTE: the Exposure feature doesn't work on all cameras, particularly Sony.  In this case simply adjust the exposure and focus on the camera before connecting the VIEW.  Additionally, this mode is still in development -- if you have trouble, just setup the exposure in the camera.</aside>
+<aside class="notice">NOTE: the Exposure feature may not work well on all cameras.  If you have any trouble with it, simply adjust the exposure and focus on the camera before connecting the VIEW.</aside>
 
 <aside class="success">Whether setup via the Exposure menu or in camera, the starting exposure for ramping is very important as it is used for a reference throughout the time-lapse.  Make sure it is not over-exposed, as excessive clipped (overexposed highlights) regions of the image can cause the exposure ramping to be inaccurate.</aside>
 
@@ -41,6 +41,11 @@ Auto Ramping | In this mode the VIEW will automatically adjust the exposure to m
 For short time-lapse clips during the day or night where the exposure and interval are constant, choose Fixed.
 
 For sunsets, sunrises, day to night, night to day, and day to night to day, choose Auto Ramping.  This will also enable the Auto Interval options for interval ramping between day and night.
+
+## Primary Camera
+
+This option is only shown when more than one camera is connected to the VIEW.  The primary camera selection defines the camera used for setup and liveview, the status thumbnail, and the exposure tracking.  The settings from the primary camera are copied to all additional cameras connected, and they are triggered in sync.  This is nice for panoramas, as well as a wide view and a telephoto view for post-processing transitions.  In the case of wide and telephoto, make the wide view the primary for better exposure tracking.
+
 
 ## Interval Mode
 
@@ -106,7 +111,11 @@ Night Exposure | Relative exposure difference for night vs. day
 Maximum ISO | Upper ISO limit for auto ramping
 Minimum ISO | Lower ISO limit for auto ramping
 Max Shutter | Longest shutter speed to use during ramping
+Ramp Params | Which parameters to use for ramping [1]
+Min Aperture | Minimum aperture to use for ramping, e.g., f2.8 (shown only if Ramp Params includes aperture)
+Max Aperture | Maximum aperture to use for ramping, e.g., f11 (shown only if Ramp Params includes aperture)
 
+[1] The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
 
 ## Manual Aperture
 
