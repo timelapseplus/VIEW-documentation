@@ -221,13 +221,15 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 <tr>
 <td>Destination</td>
-<td>SD Card (you have to first put an SD card in the VIEW)</td>
+<td>SD Card (you have to first put an SD card in the VIEW)<sup>1</sup></td>
 </tr>
 </tbody></table>
 
 <p>I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it&rsquo;s not overexposed!</p>
 
 <p>Then, let it run at least 3 hours after sunset to get a good length and transition.  Or, if you have external power for the camera, go all night until sunrise!</p>
+
+<p><sup>1</sup>Some cameras perform better with the Destination set to camera.  This is only recommended for the first test for the convenience of post processing.</p>
 
 <h3 id="time-lapse-options-are-described-below">Time-lapse options are described below</h3>
 
@@ -419,7 +421,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="destination">Destination</h2>
 
-<p>This option is only shown when an SD card is inserted in the VIEW.</p>
+<p>This option is only shown when an SD card is inserted in the VIEW.  Sony cameras require that the images be saved to the VIEW&rsquo;s SD card.</p>
 
 <table><thead>
 <tr>
@@ -429,11 +431,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </thead><tbody>
 <tr>
 <td>Camera</td>
-<td>Keep images on the camera&rsquo;s card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon).</td>
+<td>Keep images on the camera&rsquo;s card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon). This is recommended for best performance and shortest intervals.</td>
 </tr>
 <tr>
 <td>SD Card</td>
-<td>Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images.</td>
+<td>Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images, but requires longer intervals due to transferring the images over USB.</td>
 </tr>
 </tbody></table>
 
@@ -730,7 +732,13 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h3 id="trouble-connecting-to-wifi">Trouble Connecting to Wifi</h3>
 
-<p>Currently, it does not connect to Apple brand wifi routers.  This is being researched and will hopefully be resolved soon.  Other users have reported that creating a guest network on the Apple router works for connecting the VIEW.</p>
+<p>Certain firmware versions had a bug preventing wifi from connecting to certain access points depending on the name:</p>
+
+<ul>
+<li>v1.5.0 and under: would not connect to access points with an apostrophe (&rsquo;) in the name</li>
+<li>v1.6.0 to v1.6.1 would not connect to access points with a unicode apostrophe (&rsquo;), space, or dash (-) in the name</li>
+<li>v1.6.2 and up: should connect to all access points</li>
+</ul>
 
 <p>Also, if it fails to connect, try disabling wifi, enabling it again, then reconnecting making sure the password is correct (it&rsquo;s case-sensitive).</p>
 
