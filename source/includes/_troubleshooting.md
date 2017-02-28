@@ -37,7 +37,11 @@ It will then take an image, gather information about the camera, and upload it v
 If you send a report, let me know more details by sending a message here: <http://www.timelapseplus.com/contact/>
 
 ### Trouble Connecting to Wifi
-Currently, it does not connect to Apple brand wifi routers.  This is being researched and will hopefully be resolved soon.  Other users have reported that creating a guest network on the Apple router works for connecting the VIEW.
+Certain firmware versions had a bug preventing wifi from connecting to certain access points depending on the name:
+
+- v1.5.0 and under: would not connect to access points with an apostrophe (') in the name
+- v1.6.0 to v1.6.1 would not connect to access points with a unicode apostrophe ('), space, or dash (-) in the name
+- v1.6.2 and up: should connect to all access points
 
 Also, if it fails to connect, try disabling wifi, enabling it again, then reconnecting making sure the password is correct (it's case-sensitive).
 

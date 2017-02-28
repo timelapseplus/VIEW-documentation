@@ -14,11 +14,13 @@ Timelapse Mode | Auto Ramping
 Interval Mode | Auto Variable
 Day Interval | 8 seconds
 Night Interval | 40 Seconds
-Destination | SD Card (you have to first put an SD card in the VIEW)
+Destination | SD Card (you have to first put an SD card in the VIEW)<sup>1</sup>
 
 I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it's not overexposed!
 
 Then, let it run at least 3 hours after sunset to get a good length and transition.  Or, if you have external power for the camera, go all night until sunrise!
+
+<sup>1</sup>Some cameras perform better with the Destination set to camera.  This is only recommended for the first test for the convenience of post processing.
 
 ### Time-lapse options are described below
 
@@ -130,12 +132,12 @@ Option | Description
 
 ## Destination
 
-This option is only shown when an SD card is inserted in the VIEW.
+This option is only shown when an SD card is inserted in the VIEW.  Sony cameras require that the images be saved to the VIEW's SD card.
 
 Option | Description
 ------ | -------
-Camera | Keep images on the camera's card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon).
-SD Card | Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images.
+Camera | Keep images on the camera's card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon). This is recommended for best performance and shortest intervals.
+SD Card | Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images, but requires longer intervals due to transferring the images over USB.
 
 ## START
 
