@@ -41,6 +41,8 @@ The VIEW includes two 2.5mm TRS auxiliary ports `(#9, #10)` for motion sync, shu
 
 The SD card slot `(#8)` provides a convenient way to get data from the VIEW.  The VIEW can also save the RAW time-lapse images to the SD card -- this is the most convenient way for post processing, since each time-lapse is named sequentially in its own folder along with the XMP files for automatic deflickering in Lightroom.
 
+The VIEW supports all current SD card types and capacities, but internally it uses a Class 10 controller, so the newest UHS II cards will not offer a speed improvement over a Class 10 card.  Cards can be formatted with the camera or on a computer as FAT/EXFAT (MSDOS).
+
 ### USB Host
 
 The VIEW includes a full-size USB host port `(#13)` for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX via USB, and multiple camera support is planned for the future).
