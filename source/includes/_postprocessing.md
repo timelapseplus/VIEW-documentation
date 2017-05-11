@@ -10,4 +10,4 @@ See the flow chart below for a rough overview of the process.
 
 ## Flowchart Overview
 
-![Front Overview](images/view-overview-front.png)
+![Flowchart](images/post-flowchart.png)
