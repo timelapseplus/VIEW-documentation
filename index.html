@@ -658,6 +658,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 </tbody></table>
 
+<p>Note: firmware v1.7 (not yet released) will reduce the minimum ramping for Canon and Nikon to 3-4 seconds, and Sony to 4-5 seconds (via wifi).</p>
+
           <h1 id="motion-control">Motion Control</h1>
 
 <p>The VIEW is able to synchronize with most motion control systems for shoot-move-shoot functionality.  In addition it has full motion programming support for the Dynamic Perception NMX stepper controller (via Bluetooth or USB), with support for the eMotimo Spectrum (via AUX2 serial) and Syrp Genie Mini (via Bluetooth) to come soon.</p>
@@ -685,6 +687,20 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <p>To connect to the NMX via USB, a USB hub is needed for the additional USB port (one for the camera, one for the NMX).  Connect a small USB hub to the VIEW, then connect the camera and the NMX to the hub, then connect power to the NMX (in this order!).</p>
 
 <p>Important: the NMX must first be connected via USB, then external power &ndash; if the NMX is powered on before connecting USB, it won&rsquo;t be detected.</p>
+
+          <h1 id="post-processing">Post Processing</h1>
+
+<p>For ramping, the VIEW uses XMP files to provide exposure correction data for Lightroom to eliminate flicker.  As such, for flicker-free results, the post-processing workflow needs to incorporate these files.</p>
+
+<p>If the images were saved to the VIEW&rsquo;s SD card (Destination = &lsquo;SD card&rsquo;), then the delicker data will already be there when imported into Lightroom.  Just be careful not to change the exposure slider.  All other sliders are ok in the develop mode.</p>
+
+<p>If the images were saved to the camera (Destination = &#39;Camera&rsquo;), then the XMPs need to be merged into the same folder as the RAW images.</p>
+
+<p>See the flow chart below for a rough overview of the process.</p>
+
+<h2 id="flowchart-overview">Flowchart Overview</h2>
+
+<p><img alt="Front Overview" src="images/view-overview-front.png" /></p>
 
           <h1 id="troubleshooting-amp-support">Troubleshooting &amp; Support</h1>
 
