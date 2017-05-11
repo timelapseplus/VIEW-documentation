@@ -46,3 +46,5 @@ Sony A7R    | Yes          | No            | No       | 12-14s
 Sony A7RII  | Yes          | No            | Yes      | 12-14s
 Sony A7II, A6300, A6500, A7SII | Yes   | No            | Yes       | 8-10s
 Panasonic GH4, GH5 | Yes          | No     | No | 6-8s
+
+Note: firmware v1.7 (not yet released) will reduce the minimum ramping for Canon and Nikon to 3-4 seconds, and Sony to 4-5 seconds (via wifi).

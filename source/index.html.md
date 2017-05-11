@@ -13,6 +13,7 @@ includes:
   - firmware
   - cameras
   - motion
+  - postprocessing
   - troubleshooting
 
 search: true
