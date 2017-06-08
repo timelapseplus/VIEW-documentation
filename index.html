@@ -454,7 +454,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <h3 id="local-method-pros">Local Method Pros:</h3>
 
 <ul>
-<li>No Internet require, works in remote locations</li>
+<li>No Internet required, works in remote locations</li>
 <li>Low-latency connections, great with streaming liveview during setup</li>
 </ul>
 
@@ -499,7 +499,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
 
-<aside class="notice">NOTE:  There&rsquo;s currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed in version v1.0.3</aside>
+<aside class="notice">NOTE:  There&rsquo;s currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed since version v1.0.3</aside>
 
 <h2 id="remote-internet-method">Remote Internet Method</h2>
 
@@ -531,7 +531,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>The firmware is loaded directly from github releases, so you can also browse the available firmware here: <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a></p>
 
-<p>The current firmware version is displayed on the top line of the screen.</p>
+<p>The current firmware version is displayed on the top line of the screen on the VIEW when a camera is not connected.  It can also be found in Information-&gt;System Info.</p>
+
+<h2 id="update-via-wifi">Update via Wifi</h2>
+
+<p>This is usually the easiest method, provided a wireless internet connection is available.  Note that the VIEW is not able to log into captive portals (such as hotel wifi where you need to log in with a room number), so in that case the SD card method below can be used.</p>
 
 <h3 id="step-1-connect-the-view-to-the-internet">Step 1: Connect the VIEW to the internet</h3>
 
@@ -554,6 +558,17 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <p>The installation will take between 5 and 30 minutes, depending on the connection quality.  Upon success, the system wil reload, displaying the boot splash screen.  If it fails, it will return to the Software Versions menu (better feedback in the UI will be added for this in the future).</p>
 
 <p>Firmware updates will either fail or succeed &ndash; it won&rsquo;t get stuck in a corrupted state.  That said, it&rsquo;s possible for it to hang when downloading if there&rsquo;s a network interruption (working on fixing this).  If after 15 minutes or so the VIEW still says it&rsquo;s downloading the firmware, it may need a force-restart.  Hold the power button for fifteen seconds to power down, then 2 seconds to boot it back up.  It will load the old firmware version, and then you can try again to update.  A future update will provide better error handling &amp; reporting and progress reporting (like a progress bar for the download).</p>
+
+<h2 id="update-via-sd-card">Update via SD Card</h2>
+
+<ol>
+<li>Using a computer with internet access, download the latest firmware source code zip file from the releases page here: <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a></li>
+<li>Copy the downloaded zip file to the root folder of an SD card (it doesn&rsquo;t need to be empty, it just needs enough space for the zip file).  Do not rename the zip file &ndash; the name is used by the VIEW for recognizing the firmware and version.</li>
+<li>Insert the SD card with the zip file into the VIEW.</li>
+<li>On the VIEW, go to Settings-&gt;Software Version-&gt;Install from SD card to begin installation.  If there is more than one firmware zip file on the SD card, it will automatically select the most recent version.</li>
+</ol>
+
+<aside class="notice">If for some reason the system is corrupted and the VIEW will not boot past the splash screen, the system can be restored by holding the power button for 15 seconds to power off, then insert an SD card with the firmware zip file, power on by pressing the power button for 2 seconds, then hold the enter (middle right) button until the &ldquo;Updating&hellip;&rdquo; screen appears.  It will then install the firmware from the card and boot up.</aside>
 
           <h1 id="camera-specific-notes">Camera-Specific Notes</h1>
 
@@ -586,11 +601,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera&rsquo;s card while it&rsquo;s connected via USB.</p>
 
-<p>The Sony A7RII needs longer intervals due to the large file size.  12 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.</p>
+<p>The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.</p>
 
 <h2 id="nikon">Nikon</h2>
 
-<p>Many (all?) Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you&rsquo;ll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.</p>
+<p>Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you&rsquo;ll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.</p>
 
 <h2 id="panasonic">Panasonic</h2>
 
@@ -612,53 +627,51 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Yes</td>
 <td>Yes, most</td>
 <td>Yes, most</td>
-<td>5-6s</td>
+<td>3-4s</td>
 </tr>
 <tr>
 <td>Canon DSLRs</td>
 <td>Yes</td>
 <td>Yes, most</td>
 <td>Yes, most</td>
-<td>5-6s</td>
+<td>3-4s</td>
 </tr>
 <tr>
 <td>Sony A7, A6000, A7S</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
-<td>8-10s</td>
+<td>8-12s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7R</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
-<td>12-14s</td>
+<td>14-18s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7RII</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>12-14s</td>
+<td>14-18s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7II, A6300, A6500, A7SII</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>8-10s</td>
+<td>8-12s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Panasonic GH4, GH5</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
-<td>6-8s</td>
+<td>4-7s</td>
 </tr>
 </tbody></table>
-
-<p>Note: firmware v1.7 (not yet released) will reduce the minimum ramping for Canon and Nikon to 3-4 seconds, and Sony to 4-5 seconds (via wifi).</p>
 
           <h1 id="motion-control">Motion Control</h1>
 
