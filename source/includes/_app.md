@@ -6,7 +6,7 @@ There are two methods for connecting to the VIEW from a mobile device, a local W
 
 ### Local Method Pros:
 
-* No Internet require, works in remote locations
+* No Internet required, works in remote locations
 * Low-latency connections, great with streaming liveview during setup
 
 ### Local Method Cons:
@@ -42,7 +42,7 @@ Then, on the mobile device:
 
 That's it -- the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.
 
-<aside class="notice">NOTE:  There's currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed in version v1.0.3</aside>
+<aside class="notice">NOTE:  There's currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed since version v1.0.3</aside>
 
 
 ## Remote Internet Method

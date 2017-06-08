@@ -25,11 +25,11 @@ Setup the following on the camera:
 
 On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera's card while it's connected via USB.
 
-The Sony A7RII needs longer intervals due to the large file size.  12 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.
+The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.
 
 ## Nikon
 
-Many (all?) Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.
+Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.
 
 ## Panasonic
 
@@ -39,12 +39,10 @@ Make sure the USB mode on the camera is set to PTP
 
 Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
 ------------|--------------|---------------|----------|----------------- 
-Nikon DSLRs | Yes          | Yes, most     | Yes, most| 5-6s
-Canon DSLRs | Yes          | Yes, most     | Yes, most| 5-6s
-Sony A7, A6000, A7S | Yes   | No            | No       | 8-10s
-Sony A7R    | Yes          | No            | No       | 12-14s
-Sony A7RII  | Yes          | No            | Yes      | 12-14s
-Sony A7II, A6300, A6500, A7SII | Yes   | No            | Yes       | 8-10s
-Panasonic GH4, GH5 | Yes          | No     | No | 6-8s
-
-Note: firmware v1.7 (not yet released) will reduce the minimum ramping for Canon and Nikon to 3-4 seconds, and Sony to 4-5 seconds (via wifi).
+Nikon DSLRs | Yes          | Yes, most     | Yes, most| 3-4s
+Canon DSLRs | Yes          | Yes, most     | Yes, most| 3-4s
+Sony A7, A6000, A7S | Yes   | No            | No       | 8-12s via USB, 4-5s via Wifi
+Sony A7R    | Yes          | No            | No       | 14-18s via USB, 4-5s via Wifi
+Sony A7RII  | Yes          | No            | Yes      | 14-18s via USB, 4-5s via Wifi
+Sony A7II, A6300, A6500, A7SII | Yes   | No            | Yes       | 8-12s via USB, 4-5s via Wifi
+Panasonic GH4, GH5 | Yes          | No     | No | 4-7s
