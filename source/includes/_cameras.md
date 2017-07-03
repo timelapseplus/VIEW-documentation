@@ -41,6 +41,8 @@ To connect the camera via wifi:
 
 When using the wifi interface, the time-lapse Destination setting must be set to "Camera".  Afterward, you can get the XMPs via the Time-lapse Clips menu.
 
+At present, a limitation with Sony wifi is that since the wifi interface on the VIEW is used for the camera, it's not possible to use the remote app.  It might be possible in the future firmware release to have two wifi interfaces to work around this.
+
 ## Nikon
 
 Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.
