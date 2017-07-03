@@ -27,7 +27,7 @@ On the VIEW in the time-lapse setup menu, the Destination must be set to SD card
 
 The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.
 
-## Sony Alpha (USB)
+## Sony Alpha (Wifi)
 
 The best interface for Sony is wifi since it doesn't have the limitations imposed on the USB interface.
 
