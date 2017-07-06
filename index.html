@@ -487,7 +487,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <ol>
 <li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
-<li>Enable Access Point Mode: Settings -&gt; Wireless Setup -&gt; Enable TL+VIEW AP (if this setting is missing it means it&rsquo;s already enabled)</li>
+<li>Enable Access Point Mode: Settings -&gt; Wireless Setup -&gt; Enable built-in AP (if this setting is missing it means it&rsquo;s already enabled)</li>
 </ol>
 
 <p>Then, on the mobile device:</p>
@@ -499,7 +499,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
 
-<aside class="notice">NOTE:  There&rsquo;s currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed since version v1.0.3</aside>
+<p>The name of the built-in access point can be changed under Settings -&gt; Wireless Setup -&gt; Set built-in AP Name.</p>
 
 <h2 id="remote-internet-method">Remote Internet Method</h2>
 
@@ -509,7 +509,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <ol>
 <li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
-<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to AP</li>
+<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to Network</li>
 <li>Enter the password for the network if necessary (make sure it&rsquo;s entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.</li>
 <li>Once the VIEW connects (only the first time), a number will appear on the screen.  You&rsquo;ll need this for step 4 below.</li>
 </ol>
@@ -543,7 +543,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <ol>
 <li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
-<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to AP</li>
+<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to Network</li>
 <li>Enter the password for the network if necessary (make sure it&rsquo;s entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.</li>
 </ol>
 
@@ -560,6 +560,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <p>Firmware updates will either fail or succeed &ndash; it won&rsquo;t get stuck in a corrupted state.  That said, it&rsquo;s possible for it to hang when downloading if there&rsquo;s a network interruption (working on fixing this).  If after 15 minutes or so the VIEW still says it&rsquo;s downloading the firmware, it may need a force-restart.  Hold the power button for fifteen seconds to power down, then 2 seconds to boot it back up.  It will load the old firmware version, and then you can try again to update.  A future update will provide better error handling &amp; reporting and progress reporting (like a progress bar for the download).</p>
 
 <h2 id="update-via-sd-card">Update via SD Card</h2>
+
+<aside class="notice">This method only works if firmware v1.7.0 or newer has been installed.  After updating to v1.7.0 or newer, it&rsquo;s possible to install older versions and still have the SD card update method work.</aside>
 
 <ol>
 <li>Using a computer with internet access, download the latest firmware source code zip file from the releases page here: <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a></li>
@@ -625,6 +627,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you&rsquo;ll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.</p>
 
+<p>Note: some VIEW devices would not connect to the Nikon D800/D800E until firmware version v1.7.5.  Updating to v1.7.5 or newer will fix this.</p>
+
 <h2 id="panasonic">Panasonic</h2>
 
 <p>Make sure the USB mode on the camera is set to PTP</p>
@@ -658,14 +662,14 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Sony A7, A6000, A7S</td>
 <td>Yes</td>
 <td>No</td>
-<td>No</td>
+<td>No (wifi yes)</td>
 <td>8-12s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7R</td>
 <td>Yes</td>
 <td>No</td>
-<td>No</td>
+<td>No (wifi yes)</td>
 <td>14-18s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
