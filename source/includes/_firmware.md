@@ -15,7 +15,7 @@ This is usually the easiest method, provided a wireless internet connection is a
 The VIEW must first be connected to the Internet.  Follow these to connect to a WiFi access point for Internet access:
 
 1. Enable WiFi (if it's not already): Settings -> Wireless Setup -> Enable Wifi
-2. Connect to a nearby access point: Settings -> Wireless Setup -> Connect to AP
+2. Connect to a nearby access point: Settings -> Wireless Setup -> Connect to Network
 3. Enter the password for the network if necessary (make sure it's entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.
 
 You can ignore any prompts to enter a code -- just press the cancel button.
@@ -31,6 +31,8 @@ The installation will take between 5 and 30 minutes, depending on the connection
 Firmware updates will either fail or succeed -- it won't get stuck in a corrupted state.  That said, it's possible for it to hang when downloading if there's a network interruption (working on fixing this).  If after 15 minutes or so the VIEW still says it's downloading the firmware, it may need a force-restart.  Hold the power button for fifteen seconds to power down, then 2 seconds to boot it back up.  It will load the old firmware version, and then you can try again to update.  A future update will provide better error handling & reporting and progress reporting (like a progress bar for the download).
 
 ## Update via SD Card
+
+<aside class="notice">This method only works if firmware v1.7.0 or newer has been installed.  After updating to v1.7.0 or newer, it's possible to install older versions and still have the SD card update method work.</aside>
 
 1. Using a computer with internet access, download the latest firmware source code zip file from the releases page here: <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a>
 2. Copy the downloaded zip file to the root folder of an SD card (it doesn't need to be empty, it just needs enough space for the zip file).  Do not rename the zip file -- the name is used by the VIEW for recognizing the firmware and version.

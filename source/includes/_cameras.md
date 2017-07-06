@@ -47,6 +47,8 @@ At present, a limitation with Sony wifi is that since the wifi interface on the 
 
 Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.
 
+Note: some VIEW devices would not connect to the Nikon D800/D800E until firmware version v1.7.5.  Updating to v1.7.5 or newer will fix this.
+
 ## Panasonic
 
 Make sure the USB mode on the camera is set to PTP
@@ -55,10 +57,11 @@ Make sure the USB mode on the camera is set to PTP
 
 Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
 ------------|--------------|---------------|----------|----------------- 
-Nikon DSLRs | Yes          | Yes, most     | Yes, most| 3-4s
-Canon DSLRs | Yes          | Yes, most     | Yes, most| 3-4s
-Sony A7, A6000, A7S | Yes   | No            | No       | 8-12s via USB, 4-5s via Wifi
-Sony A7R    | Yes          | No            | No       | 14-18s via USB, 4-5s via Wifi
-Sony A7RII  | Yes          | No            | Yes      | 14-18s via USB, 4-5s via Wifi
-Sony A7II, A6300, A6500, A7SII | Yes   | No            | Yes       | 8-12s via USB, 4-5s via Wifi
+Nikon DSLRs | Yes              | Yes, most | Yes, most| 3-4s
+Canon DSLRs | Yes              | Yes, most | Yes, most| 3-4s
+Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 8-12s via USB, 4-5s via Wifi
+Sony A7R    | Yes              | No        | No (wifi yes)      | 14-18s via USB, 4-5s via Wifi
+Sony A7RII  | Yes              | No        | Yes       | 14-18s via USB, 4-5s via Wifi
+Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 8-12s via USB, 4-5s via Wifi
 Panasonic GH4, GH5 | Yes          | No     | No | 4-7s
+

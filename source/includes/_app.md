@@ -33,7 +33,7 @@ There are two methods for connecting to the VIEW from a mobile device, a local W
 To configure the local WiFi app interface, setup the following on the VIEW:
 
 1. Enable WiFi (if it's not already): Settings -> Wireless Setup -> Enable Wifi
-2. Enable Access Point Mode: Settings -> Wireless Setup -> Enable TL+VIEW AP (if this setting is missing it means it's already enabled)
+2. Enable Access Point Mode: Settings -> Wireless Setup -> Enable built-in AP (if this setting is missing it means it's already enabled)
 
 Then, on the mobile device:
 
@@ -42,7 +42,7 @@ Then, on the mobile device:
 
 That's it -- the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.
 
-<aside class="notice">NOTE:  There's currently a bug in the firmware that causes this method to sometimes not fully load the app in version v1.0.2 and under.  It has now been fixed since version v1.0.3</aside>
+The name of the built-in access point can be changed under Settings -> Wireless Setup -> Set built-in AP Name.
 
 
 ## Remote Internet Method
@@ -52,7 +52,7 @@ That's it -- the app will then load in the browser.  On an iPhone, you can save 
 To configure the remote web app interface, setup the following on the VIEW:
 
 1. Enable WiFi (if it's not already): Settings -> Wireless Setup -> Enable Wifi
-2. Connect to a nearby access point: Settings -> Wireless Setup -> Connect to AP
+2. Connect to a nearby access point: Settings -> Wireless Setup -> Connect to Network
 3. Enter the password for the network if necessary (make sure it's entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.
 4. Once the VIEW connects (only the first time), a number will appear on the screen.  You'll need this for step 4 below.
 
