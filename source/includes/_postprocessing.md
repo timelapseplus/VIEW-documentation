@@ -6,6 +6,8 @@ If the images were saved to the VIEW's SD card (Destination = 'SD card'), then t
 
 If the images were saved to the camera (Destination = 'Camera'), then the XMPs need to be merged into the same folder as the RAW images.
 
+To retrieve XMPs for clips that were saved to the camera, go to Time-lapse Clips, select the clip, then press the menu (lower right) button and select "Write XMPs to SD card".  This step is necessary even if an SD card was present in the VIEW while recording to the camera.
+
 See the flow chart below for a rough overview of the process.
 
 ## Flowchart Overview
