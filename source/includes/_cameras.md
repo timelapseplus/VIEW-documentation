@@ -53,6 +53,10 @@ Note: some VIEW devices would not connect to the Nikon D800/D800E until firmware
 
 Make sure the USB mode on the camera is set to PTP
 
+## Fuji X
+
+Note: Fuji support requires v1.8 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.  On the X-T2, it's currently not possible to save to the camera, so make sure there's an SD card in the VIEW and set the destination to 'SD Card'.  This should be fixed soon.
+
 ## Camera Support Overview
 
 Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
@@ -62,6 +66,9 @@ Canon DSLRs | Yes              | Yes, most | Yes, most| 3-4s
 Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 8-12s via USB, 4-5s via Wifi
 Sony A7R    | Yes              | No        | No (wifi yes)      | 14-18s via USB, 4-5s via Wifi
 Sony A7RII  | Yes              | No        | Yes       | 14-18s via USB, 4-5s via Wifi
-Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 8-12s via USB, 4-5s via Wifi
-Panasonic GH4, GH5 | Yes          | No     | No | 4-7s
+Sony A7II, A6300, A6500, A7SII, A9 | Yes | No  | Yes       | 8-12s via USB, 4-5s via Wifi
+Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
+Panasonic GH5 | No (planned) | No     | No (planned) | --
+Fuji X-T1 | Yes | No | Yes | 5-8s
+Fuji X-T2 | Yes | Yes | Yes | 5-8s
 

@@ -110,14 +110,18 @@ The Night Exposure setting defines how much less exposed "night" should be, rela
 Option | Description
 ------ | -------
 Night Exposure | Relative exposure difference for night vs. day
+Ramping Algorithm | Method used for auto ramping exposure [1]
 Maximum ISO | Upper ISO limit for auto ramping
 Minimum ISO | Lower ISO limit for auto ramping
 Max Shutter | Longest shutter speed to use during ramping
-Ramp Params | Which parameters to use for ramping [1]
+Ramp Params | Which parameters to use for ramping [2]
 Min Aperture | Minimum aperture to use for ramping, e.g., f2.8 (shown only if Ramp Params includes aperture)
 Max Aperture | Maximum aperture to use for ramping, e.g., f11 (shown only if Ramp Params includes aperture)
 
-[1] The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
+[1] The PID Luminance is the default and orginal, and the LRTimelapse method was contributed by Gunther Wegner as an alternative method and has been working well since v1.7.8.  The PID Luminance method is multi-layered and tracks the rate of change of average image luminance (with extra weight for clipping) and predicts the expected exposure for the next frame.  It limits the response time to provide smooth transitions and works in both directions (sunset or sunrise) at once.  The LRTimelapse method differs in that it is based on the histogram, simply increasing or decreasing the exposure to maintain a similar histogram and avoid clipping.  This allows for more rapid changes (up to 1/3 stop per frame) and predictable results.  Which is better?  Good question -- if you don't like the results with one, try the other, and let me know your experience at https://www.timelapseplus.com/contact
+
+[2] The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
+
 
 ## Manual Aperture
 
