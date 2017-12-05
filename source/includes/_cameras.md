@@ -7,6 +7,7 @@ This section includes notes and issues specific to certain camera bodies.  Camer
 * Manual mode
 * A native ISO setting (not Auto)
 * Save as RAW (not RAW+JPEG)
+* Disable any long exposure noise reduction
 * Focus should be manual or back-button (if the shutter button activates focus it can cause issues)
 * It's best to disable image stabilization
 
@@ -55,7 +56,7 @@ Make sure the USB mode on the camera is set to PTP
 
 ## Fuji X
 
-Note: Fuji support requires v1.8 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.  On the X-T2, it's currently not possible to save to the camera, so make sure there's an SD card in the VIEW and set the destination to 'SD Card'.  This should be fixed soon.
+Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.
 
 ## Camera Support Overview
 
