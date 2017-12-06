@@ -76,5 +76,5 @@ Sony A7II, A6300, A6500, A7SII, A9 | Yes | No  | Yes       | 8-12s via USB, 4-5s
 Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
 Panasonic GH5 | No (planned) | No     | No (planned) | --
 Fuji X-T1 | Yes | No | Yes | 5-8s
-Fuji X-T2 | Yes | Yes | Yes | 5-8s
+Fuji X-T2 | Yes | Yes | Yes | 3-4s
 
