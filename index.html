@@ -630,6 +630,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>At present, a limitation with Sony wifi is that since the wifi interface on the VIEW is used for the camera, it&rsquo;s not possible to use the remote app.  It might be possible in the future firmware release to have two wifi interfaces to work around this.</p>
 
+<p>Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW&rsquo;s battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera&rsquo;s battery slowly drains.</p>
+
 <h2 id="nikon">Nikon</h2>
 
 <p>Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you&rsquo;ll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.</p>
@@ -643,6 +645,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <h2 id="fuji-x">Fuji X</h2>
 
 <p>Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.</p>
+
+<p>Some Fuji cameras allow charging while in use via the USB port.  In this case, the VIEW&rsquo;s battery will drain rather quickly, so external power to the VIEW is recommended.  When testing with a fully charged VIEW and full battery in an X-T2, I was able to get 1200 frames over 4 hours before the VIEW ran out of power (the camera still had battery since it was being charged by the VIEW).  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera&rsquo;s battery slowly drains.</p>
 
 <h2 id="camera-support-overview">Camera Support Overview</h2>
 
@@ -733,13 +737,15 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="aux-out-sync">AUX Out Sync</h2>
 
-<p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse after the completion of each shot.</p>
+<p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., &ldquo;slave&rdquo; mode for the NMX, &ldquo;external intervolometer&rdquo; for eMotimo TB3).</p>
 
 <h2 id="external-trigger">External Trigger</h2>
 
-<p>If the motion system does not support an external auxiliary sync (like the Syrp Genie), the VIEW can use the camera trigger from the motion system to trigger each frame.  In this mode, the interval is defined externally by the motion system.</p>
+<p>This is the most versatile option and should work with any system that has a camera trigger for shoot-move-shoot.  This is the only option for systems that don&rsquo;t support an external auxiliary sync (like the Syrp Genie). In this mode, the interval is defined externally by the motion system, and the VIEW works inline between the motion system and the camera to handle the exposure.</p>
 
-<p>To use an external trigger, set the Interval Mode to &lsquo;External AUX2&rsquo; in the time-lapse setup menu.  Connect the motion system&rsquo;s camera port to the VIEW&rsquo;s AUX2 port.</p>
+<p>To use an external trigger, set the Interval Mode to &lsquo;External AUX2&rsquo; in the time-lapse setup menu.  Connect the motion system&rsquo;s camera port to the VIEW&rsquo;s AUX2 port with a 2.5mm TRS cable (TRRS won&rsquo;t work). The camera is connected to the VIEW&rsquo;s USB port as usual.  Once started, the VIEW will then wait for the signal from the motion system to trigger each frame.</p>
+
+<p>With this configuration, the VIEW handles the exposure and ramping, and the motion and interval is defined by the motion system.  Since the VIEW is not controlling the interval, a variable interval is not possible.</p>
 
 <h2 id="dynamic-perception-nmx">Dynamic Perception NMX</h2>
 
@@ -775,6 +781,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>For most users, this will be the easiest and quickest post processing option.  No XMP files are needed, and you can edit anything including exposure and the plugin will smooth it all out.  Download and read the documentation here: <a href="https://www.timelapseworkflow.com/documentation.html">https://www.timelapseworkflow.com/documentation.html</a></p>
 
+<p>The Timelapse Workflow Plugin works with Lightroom 6 and newer.</p>
+
 <p>The plugin is free for VIEW users.  Follow the registration instructions for VIEW users here: <a href="https://www.timelapseworkflow.com/documentation.html#registration">https://www.timelapseworkflow.com/documentation.html#registration</a></p>
 
 <h2 id="using-lrtimelapse">Using LRTimelapse</h2>
@@ -783,9 +791,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>When post processing with LRTimelapse, it&rsquo;s ok to adjust the exposure slider, since LRTimelapse will manage the smoothing.</p>
 
+<p>LRTimelapse works with Lightroom as well as Bridge/ACR.</p>
+
 <h2 id="using-xmps-generated-by-the-view">Using XMPs generated by the VIEW</h2>
 
-<p>The VIEW can generate XMP files to provide exposure correction data for Lightroom to eliminate flicker.</p>
+<p>The VIEW can generate XMP files to provide exposure correction data for Lightroom to eliminate flicker.  This method works with Lightroom as well as Bridge/ACR.</p>
 
 <p>If the images were saved to the VIEW&rsquo;s SD card (Destination = &lsquo;SD card&rsquo;), then the deflicker data will already be there when imported into Lightroom.  Just be careful not to change the exposure slider.  All other sliders are ok in the develop mode.</p>
 
@@ -793,7 +803,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>To retrieve XMPs for clips that were saved to the camera, go to Time-lapse Clips, select the clip, then press the menu (lower right) button and select &ldquo;Write XMPs to SD card&rdquo;.  This step is necessary even if an SD card was present in the VIEW while recording to the camera.</p>
 
-<p>For blending changes in white balance or other parameters (don&rsquo;t change exposure with this method, though), try Jeffrey Friedl’s &ldquo;Timelapse Support&rdquo; Lightroom plugin: <a href="http://regex.info/blog/lightroom-goodies/timelapse-support">http://regex.info/blog/lightroom-goodies/timelapse-support</a></p>
+<p>For blending changes in white balance or other parameters in Lightroom (don&rsquo;t change exposure with this method, though), try Jeffrey Friedl’s &ldquo;Timelapse Support&rdquo; Lightroom plugin: <a href="http://regex.info/blog/lightroom-goodies/timelapse-support">http://regex.info/blog/lightroom-goodies/timelapse-support</a></p>
 
 <h2 id="deflickering-during-render">Deflickering during render</h2>
 
