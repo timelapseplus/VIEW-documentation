@@ -4,13 +4,15 @@ The VIEW is able to synchronize with most motion control systems for shoot-move-
 
 ## AUX Out Sync
 
-To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms "closed" pulse after the completion of each shot.
+To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms "closed" pulse after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., "slave" mode for the NMX, "external intervolometer" for eMotimo TB3).
 
 ## External Trigger
 
-If the motion system does not support an external auxiliary sync (like the Syrp Genie), the VIEW can use the camera trigger from the motion system to trigger each frame.  In this mode, the interval is defined externally by the motion system.
+This is the most versatile option and should work with any system that has a camera trigger for shoot-move-shoot.  This is the only option for systems that don't support an external auxiliary sync (like the Syrp Genie). In this mode, the interval is defined externally by the motion system, and the VIEW works inline between the motion system and the camera to handle the exposure.
 
-To use an external trigger, set the Interval Mode to 'External AUX2' in the time-lapse setup menu.  Connect the motion system's camera port to the VIEW's AUX2 port.
+To use an external trigger, set the Interval Mode to 'External AUX2' in the time-lapse setup menu.  Connect the motion system's camera port to the VIEW's AUX2 port with a 2.5mm TRS cable (TRRS won't work). The camera is connected to the VIEW's USB port as usual.  Once started, the VIEW will then wait for the signal from the motion system to trigger each frame.
+
+With this configuration, the VIEW handles the exposure and ramping, and the motion and interval is defined by the motion system.  Since the VIEW is not controlling the interval, a variable interval is not possible.
 
 ## Dynamic Perception NMX
 

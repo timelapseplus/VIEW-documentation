@@ -44,6 +44,8 @@ When using the wifi interface, the time-lapse Destination setting must be set to
 
 At present, a limitation with Sony wifi is that since the wifi interface on the VIEW is used for the camera, it's not possible to use the remote app.  It might be possible in the future firmware release to have two wifi interfaces to work around this.
 
+Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains.
+
 ## Nikon
 
 Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you'll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.
@@ -57,6 +59,9 @@ Make sure the USB mode on the camera is set to PTP
 ## Fuji X
 
 Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.
+
+Some Fuji cameras allow charging while in use via the USB port.  In this case, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  When testing with a fully charged VIEW and full battery in an X-T2, I was able to get 1200 frames over 4 hours before the VIEW ran out of power (the camera still had battery since it was being charged by the VIEW).  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains.
+
 
 ## Camera Support Overview
 
