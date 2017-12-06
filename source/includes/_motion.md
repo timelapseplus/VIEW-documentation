@@ -1,6 +1,6 @@
 # Motion Control
 
-The VIEW is able to synchronize with most motion control systems for shoot-move-shoot functionality.  In addition it has full motion programming support for the Dynamic Perception NMX stepper controller (via Bluetooth or USB) and Syrp Genie Mini (via Bluetooth), with support for the eMotimo Spectrum (via AUX2 serial) and Syrp Genie Mini (via Bluetooth) to come soon.
+The VIEW is able to synchronize with most motion control systems for shoot-move-shoot functionality.  In addition it has full motion programming support for the Dynamic Perception NMX stepper controller (via Bluetooth or USB) and Syrp Genie Mini (via Bluetooth), with support for the eMotimo Spectrum (via AUX2 serial) and Kessler Second Shooter (likely) planned for the near future.
 
 ## AUX Out Sync
 
