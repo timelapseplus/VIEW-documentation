@@ -14,15 +14,15 @@ Timelapse Mode | Auto Ramping
 Interval Mode | Auto Variable
 Day Interval | 8 seconds
 Night Interval | 40 Seconds
-Destination | Camera (you have to first put an SD card in the VIEW)<sup>1</sup>
+Destination | Camera <sup>1</sup>
 
 I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it's not overexposed!
 
 Then, let it run at least 3 hours after sunset to get a good length and transition.  Or, if you have external power for the camera, go all night until sunrise!
 
-Once the time-lapse is complete, check out the <#post-processing> section.
+Once the time-lapse is complete, check out the <a href="#post-processing">post-processing</a> section.
 
-<sup>1</sup>For Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <#camera-specific-notes> for more).
+<sup>1</sup>For Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).
 
 ### Time-lapse options are described below
 
