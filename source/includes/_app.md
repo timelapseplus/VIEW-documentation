@@ -37,13 +37,14 @@ To configure the local WiFi app interface, setup the following on the VIEW:
 
 Then, on the mobile device:
 
-1. Connect to the TL+VIEW WiFi access point
+1. Connect to the TL+VIEW WiFi access point*
 2. Open a web browser and go to 10.0.0.1
 
 That's it -- the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.
 
 The name of the built-in access point can be changed under Settings -> Wireless Setup -> Set built-in AP Name.
 
+* Note: In v1.8 and newer, a password is required.  The default is "timelapse+" and it can be viewed/changed in Settings->Wireless Setup->Set built-in AP Password
 
 ## Remote Internet Method
 
