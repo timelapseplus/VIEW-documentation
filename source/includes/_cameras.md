@@ -62,6 +62,11 @@ Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has b
 
 Some Fuji cameras allow charging while in use via the USB port.  In this case, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  When testing with a fully charged VIEW and full battery in an X-T2, I was able to get 1200 frames over 4 hours before the VIEW ran out of power (the camera still had battery since it was being charged by the VIEW).  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains.
 
+## Olympus OM-D
+
+Note: Olympus support requires v1.8-44 or newer firmware on the VIEW.  It has been tested with the E-M1, E-M1 II, and E-M5 II.  Make sure the USB mode on the camera is set to Camera+PC icon.  ISO should be manually set to 200 or higher, with long exposure noise reduction disabled.
+
+
 
 ## Camera Support Overview
 
@@ -78,4 +83,7 @@ Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
 Panasonic GH5, GH5S, G9 | Yes | No     | Yes | 4-5s
 Fuji X-T1 | Yes | No | Yes | 5-8s
 Fuji X-T2 | Yes | Yes | Yes | 3-4s
+Fuji X-H2 | Yes | Yes | Yes | 3-4s
+Fuji X-Pro2 | Yes | Yes | Yes | 3-4s
+Olympus OM-D | Yes | Yes | Yes | 3-4s
 
