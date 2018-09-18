@@ -78,7 +78,8 @@ Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 8-12s via USB,
 Sony A7R    | Yes              | No        | No (wifi yes)      | 14-18s via USB, 4-5s via Wifi
 Sony A7RII  | Yes              | No        | Yes       | 14-18s via USB, 4-5s via Wifi
 Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 8-12s via USB, 4-5s via Wifi
-Sony A7rIII, A9 | Yes | No  | Yes       | 5-6s via USB, 5-6s via Wifi
+Sony A7III, A9 | Yes | No  | Yes       | 4-5s via USB, 4-5s via Wifi
+Sony A7rIII | Yes | No  | Yes       | 5-6s via USB, 5-6s via Wifi
 Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
 Panasonic GH5, GH5S, G9 | Yes | No     | Yes | 4-5s
 Fuji X-T1 | Yes | No | Yes | 5-8s
