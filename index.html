@@ -603,9 +603,15 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="sony-alpha-usb">Sony Alpha (USB)</h2>
 
-<p>Sony cameras can work well, but there are several things that the VIEW currently does not enforce but must be set in the camera for it to work.</p>
+<p>There are two groups of Sony cameras, the 1st and second generation ones and the new 3rd generation cameras (A7rIII, A9, A7III).  The 3rd generation cameras allow the RAW images to be kept on the camera allowing much faster performance via USB.</p>
 
-<p>There have been reports that not all USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.</p>
+<p>There have been reports that not all micro-USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.  The new USB-C cables are a much more secure option on the cameras the support it.</p>
+
+<h3 id="1st-and-2nd-generation-sony-alphas">1st and 2nd generation Sony Alphas</h3>
+
+<p>This includes the A6000, A6300, A6500, A7, A7r, A7s, A7rII, A7sII, A7II.</p>
+
+<p>1st and 2nd generation Sony cameras can work well, but there are several things that the VIEW currently does not enforce but must be set in the camera for it to work.</p>
 
 <p>Setup the following on the camera:</p>
 
@@ -614,11 +620,29 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <li>RAW files (not JPEG or RAW+JPEG)</li>
 <li>Manual mode, in a native ISO (not the ISO numbers with a line over them, nor auto ISO)</li>
 <li>Focus set to manual (the back button still works for autofocus, but this prevents it from trying to focus on every shot)</li>
+<li>Make sure long exposure noise reduction is disabled</li>
 </ol>
 
 <p>On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera&rsquo;s card while it&rsquo;s connected via USB.</p>
 
 <p>The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.</p>
+
+<h3 id="3rd-generation-sony-alphas">3rd generation Sony Alphas</h3>
+
+<p>This includes the A7rIII, A9 and A7III.  On these cameras, USB is the recommend connection method over wifi.</p>
+
+<p>It is possible to save the RAW images to the camera to improve interval times.  These cameras now also support focus ramping with the VIEW as well.</p>
+
+<p>Setup the following on the camera:</p>
+
+<ol>
+<li>RAW + smallest JPEG possible</li>
+<li>USB Mode set to &#39;PC Remote&rsquo;</li>
+<li>In PC Remote Settings, set Still Img Save Dest to &#39;PC+Camera&rsquo;, and set RAW+J PC Save Img to &#39;JPEG&rsquo;</li>
+<li>Manual mode, in a native ISO (not the ISO numbers with a line over them, nor auto ISO)</li>
+<li>Focus set to manual (the back button still works for autofocus, but this prevents it from trying to focus on every shot)</li>
+<li>Make sure long exposure noise reduction is disabled</li>
+</ol>
 
 <h2 id="sony-alpha-wifi">Sony Alpha (Wifi)</h2>
 
