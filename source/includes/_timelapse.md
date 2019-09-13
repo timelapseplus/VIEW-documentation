@@ -22,7 +22,7 @@ Then, let it run at least 3 hours after sunset to get a good length and transiti
 
 Once the time-lapse is complete, check out the <a href="#post-processing">post-processing</a> section.
 
-<sup>1</sup>For Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).
+<sup>1</sup>For older Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).
 
 ### Time-lapse options are described below
 
@@ -112,17 +112,14 @@ The Night Exposure setting defines how much less exposed "night" should be, rela
 Option | Description
 ------ | -------
 Night Exposure | Relative exposure difference for night vs. day
-Ramping Algorithm | Method used for auto ramping exposure [1]
 Maximum ISO | Upper ISO limit for auto ramping
 Minimum ISO | Lower ISO limit for auto ramping
 Max Shutter | Longest shutter speed to use during ramping
-Ramp Params | Which parameters to use for ramping [2]
+Ramp Params | Which parameters to use for ramping [1]
 Min Aperture | Minimum aperture to use for ramping, e.g., f2.8 (shown only if Ramp Params includes aperture)
 Max Aperture | Maximum aperture to use for ramping, e.g., f11 (shown only if Ramp Params includes aperture)
 
-[1] The PID Luminance is the default and orginal, and the LRTimelapse method was contributed by Gunther Wegner as an alternative method and has been working well since v1.7.8.  The PID Luminance method is multi-layered and tracks the rate of change of average image luminance (with extra weight for clipping) and predicts the expected exposure for the next frame.  It limits the response time to provide smooth transitions and works in both directions (sunset or sunrise) at once.  The LRTimelapse method differs in that it is based on the histogram, simply increasing or decreasing the exposure to maintain a similar histogram and avoid clipping.  This allows for more rapid changes (up to 1/3 stop per frame) and predictable results.  Which is better?  Good question -- if you don't like the results with one, try the other, and let me know your experience at https://www.timelapseplus.com/contact
-
-[2] The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
+[1] The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
 
 
 ## Manual Aperture
@@ -142,12 +139,12 @@ This option is only shown when an SD card is inserted in the VIEW.  Sony cameras
 
 Option | Description
 ------ | -------
-Camera | Keep images on the camera's card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon). This is recommended for best performance and shortest intervals.
-SD Card | Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images, but requires longer intervals due to transferring the images over USB.
+Camera | Keep images on the camera's card.  No SD card is needed in the VIEW.  This option is recommend for best performance. 
+SD Card | Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom smoothing.
 
 ## START
 
-If you have all the settings entered, select this option to start the time-lapse!  While it's running, you can select "Preview" to review the results in process, or select "RUNNING" for a cancellation confirmation.  This status screen is still in its most basic state and will be improved in a future release.
+If you have all the settings entered, select this option to start the time-lapse!  While it's running, press the enter (middle right) button or wave your hand to the right to review the results in process, or press the menu (lower right) button to stop the time-lapse.
 
 
 

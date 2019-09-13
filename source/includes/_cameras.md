@@ -15,7 +15,9 @@ This section includes notes and issues specific to certain camera bodies.  Camer
 
 There are two groups of Sony cameras, the 1st and second generation ones and the new 3rd generation cameras (A7rIII, A9, A7III).  The 3rd generation cameras allow the RAW images to be kept on the camera allowing much faster performance via USB.
 
-There have been reports that not all micro-USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.  The new USB-C cables are a much more secure option on the cameras the support it.
+There have been reports that not all micro-USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.  The new USB-C cables are a much more secure option on the cameras that support it.
+
+Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains (varies depending on camera and interval).
 
 ### 1st and 2nd generation Sony Alphas
 
@@ -33,7 +35,7 @@ Setup the following on the camera:
 
 On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera's card while it's connected via USB.
 
-The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.
+The Sony A7RII needs longer intervals due to the large file size if using USB.  8 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 4-5 seconds for a minimum interval.
 
 ### 3rd generation Sony Alphas
 
@@ -53,7 +55,7 @@ Setup the following on the camera:
 
 ## Sony Alpha (Wifi)
 
-The best interface for Sony is wifi since it doesn't have the limitations imposed on the USB interface.
+The Wifi interface allows the 1st and 2nd generation cameras to save the the camera's memory card, but in general is not as reliable as USB, which is now recommended since the new camera driver (in VIEW firmware v1.8).
 
 To connect the camera via wifi:
 
@@ -67,7 +69,6 @@ When using the wifi interface, the time-lapse Destination setting must be set to
 
 At present, a limitation with Sony wifi is that since the wifi interface on the VIEW is used for the camera, it's not possible to use the remote app.  It might be possible in the future firmware release to have two wifi interfaces to work around this.
 
-Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains.
 
 ## Nikon
 
@@ -81,7 +82,7 @@ Make sure the USB mode on the camera is set to PC Tether (for the GH3 & GH4 set 
 
 ## Fuji X
 
-Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.
+Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher (160 or higher for the X-T3).
 
 Some Fuji cameras allow charging while in use via the USB port.  In this case, the VIEW's battery will drain rather quickly, so external power to the VIEW is recommended.  When testing with a fully charged VIEW and full battery in an X-T2, I was able to get 1200 frames over 4 hours before the VIEW ran out of power (the camera still had battery since it was being charged by the VIEW).  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera's battery slowly drains.
 
@@ -95,19 +96,22 @@ Note: Olympus support requires v1.8-44 or newer firmware on the VIEW.  It has be
 
 Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
 ------------|--------------|---------------|----------|----------------- 
-Nikon DSLRs | Yes              | Yes, most | Yes, most| 3-4s
-Canon DSLRs | Yes              | Yes, most | Yes, most| 3-4s
-Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 8-12s via USB, 4-5s via Wifi
-Sony A7R    | Yes              | No        | No (wifi yes)      | 14-18s via USB, 4-5s via Wifi
-Sony A7RII  | Yes              | No        | Yes       | 14-18s via USB, 4-5s via Wifi
-Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 8-12s via USB, 4-5s via Wifi
-Sony A7III, A9 | Yes | No  | Yes       | 4-5s via USB, 4-5s via Wifi
+Nikon DSLRs | Yes              | Yes, most | Yes, most| 3s
+Nikon Z6, Z7 | Yes              | Yes      | Yes      | 3s
+Canon EOS DSLRs | Yes              | Yes, most | Yes, most| 3s
+Canon M50 | Yes              | Yes | Yes | 3s
+Canon R, RP | Yes              | Yes | Yes | 3s
+Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 4-5s via USB, 4-5s via Wifi
+Sony A7R    | Yes              | No        | No (wifi yes)      | 7-8s via USB, 4-5s via Wifi
+Sony A7RII  | Yes              | No        | Yes       | 7-8s via USB, 4-5s via Wifi
+Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 4-5s via USB, 4-5s via Wifi
+Sony A7III, A9 | Yes | No  | Yes       | 3s via USB, 4-5s via Wifi
 Sony A7rIII | Yes | No  | Yes       | 5-6s via USB, 5-6s via Wifi
 Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
-Panasonic GH5, GH5S, G9 | Yes | No     | Yes | 4-5s
+Panasonic GH5, GH5S, G9 | Yes | No     | Yes | 3s
 Fuji X-T1 | Yes | No | Yes | 5-8s
-Fuji X-T2 | Yes | Yes | Yes | 3-4s
-Fuji X-H2 | Yes | Yes | Yes | 3-4s
+Fuji X-T2, X-H2, X-T3 | Yes | Yes | Yes | 3s
+Fuji GFX | Yes | Yes | Yes | 4s
 Fuji X-Pro2 | Yes | Yes | Yes | 3-4s
-Olympus OM-D | Yes | Yes | Yes | 3-4s
+Olympus OM-D | Yes | Yes | Yes | 3s
 

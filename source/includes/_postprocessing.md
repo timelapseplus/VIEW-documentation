@@ -2,15 +2,15 @@
 
 As the VIEW changes the exposure for ramping, the changes are made in 1/3 stop steps since finer changes are not possible on the camera.  This causes stepping in the brightness of the time-lapse which can be perceived as flicker and needs correction in post processing.  There are several ways to due this, but most require Adobe Photoshop Lightroom.  In the future I plan to add Darktable support.  There have been many requests for Capture One, but due to their limited support for third party integrations, this likely won't be possible.
 
-Below are a list of post processing methods.  If you're new to it all, I would recommend checking out the Timelapse Workflow plugin.  If you're already using LRTimelapse, stick with that, as the VIEW will integrate nicely into your current workflow.
+Below are a list of post processing methods.  If you're new to it all, I would recommend checking out the Timelapse+ STUDIO plugin.  If you're already using LRTimelapse, stick with that, as the VIEW will integrate nicely into your current workflow.
 
-## Using the Timelapse Workflow plugin
+## Using the Timelapse+ STUDIO plugin
 
-For most users, this will be the easiest and quickest post processing option.  No XMP files are needed, and you can edit anything including exposure and the plugin will smooth it all out.  Download and read the documentation here: <https://www.timelapseworkflow.com/documentation.html>
+For most users, this will be the easiest and quickest post processing option.  No XMP files are needed, and you can edit anything including exposure and the plugin will smooth it all out.  Download and read the documentation here: <https://www.timelapseplus.com/studio/studio-documentation/>
 
-The Timelapse Workflow Plugin works with Lightroom 6 and newer.
+The Timelapse+ STUDIO Plugin works with Lightroom 6 and newer.
 
-The plugin is free for VIEW users.  Follow the registration instructions for VIEW users here: <https://www.timelapseworkflow.com/documentation.html#registration>
+The plugin is free for VIEW users.  Follow the registration instructions for VIEW users here: <https://www.timelapseplus.com/studio/studio-documentation/>
 
 ## Using LRTimelapse
 
