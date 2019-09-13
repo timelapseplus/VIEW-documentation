@@ -235,7 +235,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>Once the time-lapse is complete, check out the <a href="#post-processing">post-processing</a> section.</p>
 
-<p><sup>1</sup>For Sony cameras connected via USB, you&rsquo;ll need to set this to &lsquo;SD Card&rsquo; and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).</p>
+<p><sup>1</sup>For older Sony cameras connected via USB, you&rsquo;ll need to set this to &lsquo;SD Card&rsquo; and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).</p>
 
 <h3 id="time-lapse-options-are-described-below">Time-lapse options are described below</h3>
 
@@ -380,10 +380,6 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Relative exposure difference for night vs. day</td>
 </tr>
 <tr>
-<td>Ramping Algorithm</td>
-<td>Method used for auto ramping exposure [1]</td>
-</tr>
-<tr>
 <td>Maximum ISO</td>
 <td>Upper ISO limit for auto ramping</td>
 </tr>
@@ -397,7 +393,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 <tr>
 <td>Ramp Params</td>
-<td>Which parameters to use for ramping [2]</td>
+<td>Which parameters to use for ramping [1]</td>
 </tr>
 <tr>
 <td>Min Aperture</td>
@@ -409,9 +405,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 </tbody></table>
 
-<p>[1] The PID Luminance is the default and orginal, and the LRTimelapse method was contributed by Gunther Wegner as an alternative method and has been working well since v1.7.8.  The PID Luminance method is multi-layered and tracks the rate of change of average image luminance (with extra weight for clipping) and predicts the expected exposure for the next frame.  It limits the response time to provide smooth transitions and works in both directions (sunset or sunrise) at once.  The LRTimelapse method differs in that it is based on the histogram, simply increasing or decreasing the exposure to maintain a similar histogram and avoid clipping.  This allows for more rapid changes (up to 1/3 stop per frame) and predictable results.  Which is better?  Good question &ndash; if you don&rsquo;t like the results with one, try the other, and let me know your experience at https://www.timelapseplus.com/contact</p>
-
-<p>[2] The &ldquo;balanced&rdquo; option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</p>
+<p>[1] The &ldquo;balanced&rdquo; option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</p>
 
 <h2 id="manual-aperture">Manual Aperture</h2>
 
@@ -443,17 +437,17 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </thead><tbody>
 <tr>
 <td>Camera</td>
-<td>Keep images on the camera&rsquo;s card.  For auto ramping, XMP files will need to be later saved and merged with the camera files (to be described in the post-processing section coming soon). This is recommended for best performance and shortest intervals.</td>
+<td>Keep images on the camera&rsquo;s card.  No SD card is needed in the VIEW.  This option is recommend for best performance.</td>
 </tr>
 <tr>
 <td>SD Card</td>
-<td>Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom.  This simplifies post-processing and organization since the exposure corrections for deflickering will be automatically imported into Lightroom along with the images, but requires longer intervals due to transferring the images over USB.</td>
+<td>Saves the time-lapse images in their own folder in the root of the SD card, along side the XMP files for Lightroom smoothing.</td>
 </tr>
 </tbody></table>
 
 <h2 id="start">START</h2>
 
-<p>If you have all the settings entered, select this option to start the time-lapse!  While it&rsquo;s running, you can select &ldquo;Preview&rdquo; to review the results in process, or select &ldquo;RUNNING&rdquo; for a cancellation confirmation.  This status screen is still in its most basic state and will be improved in a future release.</p>
+<p>If you have all the settings entered, select this option to start the time-lapse!  While it&rsquo;s running, press the enter (middle right) button or wave your hand to the right to review the results in process, or press the menu (lower right) button to stop the time-lapse.</p>
 
           <h1 id="remote-app">Remote App</h1>
 
@@ -605,7 +599,9 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>There are two groups of Sony cameras, the 1st and second generation ones and the new 3rd generation cameras (A7rIII, A9, A7III).  The 3rd generation cameras allow the RAW images to be kept on the camera allowing much faster performance via USB.</p>
 
-<p>There have been reports that not all micro-USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.  The new USB-C cables are a much more secure option on the cameras the support it.</p>
+<p>There have been reports that not all micro-USB cables work with Sony cameras, so if it fails to connect, try a different USB cable.  The new USB-C cables are a much more secure option on the cameras that support it.</p>
+
+<p>Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW&rsquo;s battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera&rsquo;s battery slowly drains (varies depending on camera and interval).</p>
 
 <h3 id="1st-and-2nd-generation-sony-alphas">1st and 2nd generation Sony Alphas</h3>
 
@@ -625,7 +621,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>On the VIEW in the time-lapse setup menu, the Destination must be set to SD card.  Insert an SD card into the VIEW for this option to appear.  This is required because a limitation in the Sony firmware prevents it from being able to save to the camera&rsquo;s card while it&rsquo;s connected via USB.</p>
 
-<p>The Sony A7RII needs longer intervals due to the large file size if using USB.  14 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 6-8 seconds for a minimum interval.  With the Wifi interface this is not an issue.</p>
+<p>The Sony A7RII needs longer intervals due to the large file size if using USB.  8 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 4-5 seconds for a minimum interval.</p>
 
 <h3 id="3rd-generation-sony-alphas">3rd generation Sony Alphas</h3>
 
@@ -646,7 +642,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="sony-alpha-wifi">Sony Alpha (Wifi)</h2>
 
-<p>The best interface for Sony is wifi since it doesn&rsquo;t have the limitations imposed on the USB interface.</p>
+<p>The Wifi interface allows the 1st and 2nd generation cameras to save the the camera&rsquo;s memory card, but in general is not as reliable as USB, which is now recommended since the new camera driver (in VIEW firmware v1.8).</p>
 
 <p>To connect the camera via wifi:</p>
 
@@ -662,8 +658,6 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>At present, a limitation with Sony wifi is that since the wifi interface on the VIEW is used for the camera, it&rsquo;s not possible to use the remote app.  It might be possible in the future firmware release to have two wifi interfaces to work around this.</p>
 
-<p>Some Sony cameras allow charging while in use via the USB port.  If this is enabled, the VIEW&rsquo;s battery will drain rather quickly, so external power to the VIEW is recommended.  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera&rsquo;s battery slowly drains.</p>
-
 <h2 id="nikon">Nikon</h2>
 
 <p>Many Nikon cameras have the option of whether liveview displays the simulated exposure or not.  If you are using the exposure menu or liveview via the app, you&rsquo;ll want to make sure the liveview display shows the exposure.  On the D800, this is toggled by a button on the lower-left.  On the D5100 and possible other older/lower-end models, it is not possible to simulate exposure with liveview.  In this case, a test photo can be used via the smartphone app.</p>
@@ -676,7 +670,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="fuji-x">Fuji X</h2>
 
-<p>Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  It has been tested with the X-T1 and X-T2, but others in the X-series should also work as long as they are compatible with the Pro Tethering plugin for Lightroom.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher.</p>
+<p>Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher (160 or higher for the X-T3).</p>
 
 <p>Some Fuji cameras allow charging while in use via the USB port.  In this case, the VIEW&rsquo;s battery will drain rather quickly, so external power to the VIEW is recommended.  When testing with a fully charged VIEW and full battery in an X-T2, I was able to get 1200 frames over 4 hours before the VIEW ran out of power (the camera still had battery since it was being charged by the VIEW).  The VIEW cannot supply enough power to the camera to charge the battery during operation, but it will greatly extend the battery life.  So if you have a full battery in the camera and have a USB power source connected to the VIEW (like a cell phone charging pack), the whole setup should last at least 12 hours before the camera&rsquo;s battery slowly drains.</p>
 
@@ -700,49 +694,70 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Yes</td>
 <td>Yes, most</td>
 <td>Yes, most</td>
-<td>3-4s</td>
+<td>3s</td>
 </tr>
 <tr>
-<td>Canon DSLRs</td>
+<td>Nikon Z6, Z7</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>3s</td>
+</tr>
+<tr>
+<td>Canon EOS DSLRs</td>
 <td>Yes</td>
 <td>Yes, most</td>
 <td>Yes, most</td>
-<td>3-4s</td>
+<td>3s</td>
+</tr>
+<tr>
+<td>Canon M50</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>3s</td>
+</tr>
+<tr>
+<td>Canon R, RP</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>3s</td>
 </tr>
 <tr>
 <td>Sony A7, A6000, A7S</td>
 <td>Yes</td>
 <td>No</td>
 <td>No (wifi yes)</td>
-<td>8-12s via USB, 4-5s via Wifi</td>
+<td>4-5s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7R</td>
 <td>Yes</td>
 <td>No</td>
 <td>No (wifi yes)</td>
-<td>14-18s via USB, 4-5s via Wifi</td>
+<td>7-8s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7RII</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>14-18s via USB, 4-5s via Wifi</td>
+<td>7-8s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7II, A6300, A6500, A7SII</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>8-12s via USB, 4-5s via Wifi</td>
+<td>4-5s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7III, A9</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>4-5s via USB, 4-5s via Wifi</td>
+<td>3s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7rIII</td>
@@ -763,7 +778,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
-<td>4-5s</td>
+<td>3s</td>
 </tr>
 <tr>
 <td>Fuji X-T1</td>
@@ -773,18 +788,18 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>5-8s</td>
 </tr>
 <tr>
-<td>Fuji X-T2</td>
+<td>Fuji X-T2, X-H2, X-T3</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>3-4s</td>
+<td>3s</td>
 </tr>
 <tr>
-<td>Fuji X-H2</td>
+<td>Fuji GFX</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>3-4s</td>
+<td>4s</td>
 </tr>
 <tr>
 <td>Fuji X-Pro2</td>
@@ -798,7 +813,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>3-4s</td>
+<td>3s</td>
 </tr>
 </tbody></table>
 
@@ -846,15 +861,15 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>As the VIEW changes the exposure for ramping, the changes are made in 1/3 stop steps since finer changes are not possible on the camera.  This causes stepping in the brightness of the time-lapse which can be perceived as flicker and needs correction in post processing.  There are several ways to due this, but most require Adobe Photoshop Lightroom.  In the future I plan to add Darktable support.  There have been many requests for Capture One, but due to their limited support for third party integrations, this likely won&rsquo;t be possible.</p>
 
-<p>Below are a list of post processing methods.  If you&rsquo;re new to it all, I would recommend checking out the Timelapse Workflow plugin.  If you&rsquo;re already using LRTimelapse, stick with that, as the VIEW will integrate nicely into your current workflow.</p>
+<p>Below are a list of post processing methods.  If you&rsquo;re new to it all, I would recommend checking out the Timelapse+ STUDIO plugin.  If you&rsquo;re already using LRTimelapse, stick with that, as the VIEW will integrate nicely into your current workflow.</p>
 
-<h2 id="using-the-timelapse-workflow-plugin">Using the Timelapse Workflow plugin</h2>
+<h2 id="using-the-timelapse-studio-plugin">Using the Timelapse+ STUDIO plugin</h2>
 
-<p>For most users, this will be the easiest and quickest post processing option.  No XMP files are needed, and you can edit anything including exposure and the plugin will smooth it all out.  Download and read the documentation here: <a href="https://www.timelapseworkflow.com/documentation.html">https://www.timelapseworkflow.com/documentation.html</a></p>
+<p>For most users, this will be the easiest and quickest post processing option.  No XMP files are needed, and you can edit anything including exposure and the plugin will smooth it all out.  Download and read the documentation here: <a href="https://www.timelapseplus.com/studio/studio-documentation/">https://www.timelapseplus.com/studio/studio-documentation/</a></p>
 
-<p>The Timelapse Workflow Plugin works with Lightroom 6 and newer.</p>
+<p>The Timelapse+ STUDIO Plugin works with Lightroom 6 and newer.</p>
 
-<p>The plugin is free for VIEW users.  Follow the registration instructions for VIEW users here: <a href="https://www.timelapseworkflow.com/documentation.html#registration">https://www.timelapseworkflow.com/documentation.html#registration</a></p>
+<p>The plugin is free for VIEW users.  Follow the registration instructions for VIEW users here: <a href="https://www.timelapseplus.com/studio/studio-documentation/">https://www.timelapseplus.com/studio/studio-documentation/</a></p>
 
 <h2 id="using-lrtimelapse">Using LRTimelapse</h2>
 
