@@ -578,7 +578,20 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <li>On the VIEW, go to Settings-&gt;Software Version-&gt;Install from SD card to begin installation.  If there is more than one firmware zip file on the SD card, it will automatically select the most recent version.</li>
 </ol>
 
-<aside class="notice">If for some reason the system is corrupted and the VIEW will not boot past the splash screen, the system can be restored by holding the power button for 15 seconds to power off, then insert an SD card with the firmware zip file, power on by pressing the power button for 2 seconds, then hold the enter (middle right) button until the &ldquo;Updating&hellip;&rdquo; screen appears.  It will then install the firmware from the card and boot up.</aside>
+<h2 id="recovery-method">Recovery Method</h2>
+
+<p>If for some reason the system is corrupted and the VIEW will not boot past the splash screen, the system can likely be restored with the following steps:</p>
+
+<ol>
+<li><p>download a firmware zip file from <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a> and save it to the root folder of an SD card
+<aside class="notice">Important: the file needs to be the original name and still be a zip file, not an extracted folder.  If you download it multiple times, be sure to remove the added &ldquo; (2)&rdquo; or anything like that.  Safari unzips downloads automatically, so you&rsquo;ll need to use a browser other than Safari.</aside></p></li>
+<li><p>force power off the VIEW by holding the power button for 15 seconds until the red light turns off</p></li>
+<li><p>insert the SD card with the firmware file into the VIEW</p></li>
+<li><p>power on the VIEW by pressing the power button for two seconds</p></li>
+<li><p>within a couple seconds of power on, press and hold the enter (middle right) button for about 20 seconds until the splash screen appears</p></li>
+</ol>
+
+<p>At the bottom of the screen it should say &ldquo;Updating&hellip;&rdquo;.  After a few minutes, it should be restored.</p>
 
           <h1 id="camera-specific-notes">Camera-Specific Notes</h1>
 
@@ -623,13 +636,13 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>The Sony A7RII needs longer intervals due to the large file size if using USB.  8 seconds should be good &ndash; shorter might be possible.  Other Sony cameras seem to do ok at 4-5 seconds for a minimum interval.</p>
 
-<h3 id="3rd-generation-sony-alphas">3rd generation Sony Alphas</h3>
+<h3 id="3rd-and-4th-generation-sony-alphas">3rd and 4th generation Sony Alphas</h3>
 
-<p>This includes the A7rIII, A9 and A7III.  On these cameras, USB is the recommend connection method over wifi.</p>
+<p>This includes the A7rIV (4th gen), A7rIII, A9 and A7III.  On these cameras, USB is the recommend connection method over wifi.</p>
 
 <p>It is possible to save the RAW images to the camera to improve interval times.  These cameras now also support focus ramping with the VIEW as well.</p>
 
-<p>Setup the following on the camera:</p>
+<p>Setup the following on the camera (3rd gen):</p>
 
 <ol>
 <li>RAW + smallest JPEG possible</li>
@@ -639,6 +652,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <li>Focus set to manual (the back button still works for autofocus, but this prevents it from trying to focus on every shot)</li>
 <li>Make sure long exposure noise reduction is disabled</li>
 </ol>
+
+<p>Video for 3rd gen setup: <a href='https://vimeo.com/297232264' target='_blank'>https://vimeo.com/297232264</a>
+Video for 4th gen setup: <a href='https://vimeo.com/386651214' target='_blank'>https://vimeo.com/386651214</a></p>
+
+<p>Focus ramping with Sony: <a href='https://vimeo.com/387080128' target='_blank'>https://vimeo.com/387080128</a></p>
 
 <h2 id="sony-alpha-wifi">Sony Alpha (Wifi)</h2>
 
@@ -668,6 +686,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <p>Make sure the USB mode on the camera is set to PC Tether (for the GH3 &amp; GH4 set it to &ldquo;Remote Control (PTP)&rdquo;), in manual mode, RAW, and single-shot burst mode.  For the GH5, GH5S, and G9, firmware v1.8-beta23 or newer is required for the VIEW.</p>
 
+<p>Setup video: <a href='https://vimeo.com/349567517' target='_blank'>https://vimeo.com/349567517</a></p>
+
 <h2 id="fuji-x">Fuji X</h2>
 
 <p>Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher (160 or higher for the X-T3).</p>
@@ -677,6 +697,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <h2 id="olympus-om-d">Olympus OM-D</h2>
 
 <p>Note: Olympus support requires v1.8-44 or newer firmware on the VIEW.  It has been tested with the E-M1, E-M1 II, and E-M5 II.  Make sure the USB mode on the camera is set to Camera+PC icon.  ISO should be manually set to 200 or higher, with long exposure noise reduction disabled.</p>
+
+<p>Setup video: <a href='https://vimeo.com/351745255' target='_blank'>https://vimeo.com/351745255</a></p>
 
 <h2 id="camera-support-overview">Camera Support Overview</h2>
 
@@ -711,18 +733,18 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>3s</td>
 </tr>
 <tr>
-<td>Canon M50</td>
+<td>Canon EOS M50</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>3s</td>
 </tr>
 <tr>
-<td>Canon R, RP</td>
+<td>Canon EOS R, RP</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>3s</td>
+<td>4s</td>
 </tr>
 <tr>
 <td>Sony A7, A6000, A7S</td>
@@ -755,14 +777,21 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <tr>
 <td>Sony A7III, A9</td>
 <td>Yes</td>
-<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>3s via USB, 4-5s via Wifi</td>
 </tr>
 <tr>
 <td>Sony A7rIII</td>
 <td>Yes</td>
-<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>4-5s via USB, 5-6s via Wifi</td>
+</tr>
+<tr>
+<td>Sony A7rIV</td>
+<td>Yes</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>5-6s via USB, 5-6s via Wifi</td>
 </tr>
@@ -799,7 +828,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>4s</td>
+<td>4-5s</td>
 </tr>
 <tr>
 <td>Fuji X-Pro2</td>
@@ -823,7 +852,9 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="aux-out-sync">AUX Out Sync</h2>
 
-<p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., &ldquo;slave&rdquo; mode for the NMX, &ldquo;external intervolometer&rdquo; for eMotimo TB3).</p>
+<p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse (with default settings) after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., &ldquo;slave&rdquo; mode for the NMX, &ldquo;external intervalometer&rdquo; for eMotimo TB3).</p>
+
+<p>The pulse parameters can be adjusted in Settings-&gt;</p>
 
 <h2 id="external-trigger">External Trigger</h2>
 
@@ -839,23 +870,31 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h3 id="nmx-bluetooth-connection">NMX Bluetooth Connection</h3>
 
-<p><i>Note: for this method, the latest v1.8 beta firmware should be installed on the VIEW.</i>  To connect the NMX via Bluetooth, first enable Bluetooth on the VIEW in Settings-&gt;Wireless Setup-&gt;Enable Bluetooth (if it only shows &ldquo;Disable Bluetooth&rdquo;, then it&rsquo;s already enabled).  Make sure the NMX app is not connected to the NMX, as this will block the VIEW from connecting (turn BT off on the phone if needed).  With Bluetooth enabled, the VIEW will automatically connect to the first available NMX controller when it is powered on.  A small Bluetooth icon will appear in the top bar of the VIEW once connected.  It can then be setup via the VIEW wifi app as show in this video: https://vimeo.com/237150285</p>
+<p><i>Note: for this method, the latest v1.8 beta firmware should be installed on the VIEW.</i>  To connect the NMX via Bluetooth, first enable Bluetooth on the VIEW in Settings-&gt;Wireless Setup-&gt;Enable Bluetooth (if it only shows &ldquo;Disable Bluetooth&rdquo;, then it&rsquo;s already enabled).  Make sure the NMX app is not connected to the NMX, as this will block the VIEW from connecting (turn BT off on the phone if needed).  With Bluetooth enabled, the VIEW will automatically connect to the first available NMX controller when it is powered on.  A small Bluetooth icon will appear in the top bar of the VIEW once connected.  It can then be setup via the VIEW wifi app as show in this video: <a href='https://vimeo.com/237150285' target='_blank'>https://vimeo.com/237150285</a></p>
 
 <h3 id="nmx-usb-connection">NMX USB Connection</h3>
 
-<p>To connect to the NMX via USB, a USB hub is needed for the additional USB port (one for the camera, one for the NMX).  Connect a small USB hub to the VIEW, then connect the camera and the NMX to the hub, then connect power to the NMX (in this order!).  It&rsquo;s recommended to have BT disabled on both the VIEW and the phone in this case to avoid any issues.  A small Bluetooth icon will appear in the top bar of the VIEW once connected.  It can then be setup via the VIEW wifi app as show in this video: <a href="https://vimeo.com/237150285">https://vimeo.com/237150285</a></p>
+<p>To connect to the NMX via USB, a USB hub is needed for the additional USB port (one for the camera, one for the NMX).  Connect a small USB hub to the VIEW, then connect the camera and the NMX to the hub, then connect power to the NMX (in this order!).  It&rsquo;s recommended to have BT disabled on both the VIEW and the phone in this case to avoid any issues.  A small Bluetooth icon will appear in the top bar of the VIEW once connected.  It can then be setup via the VIEW wifi app as show in this video: <a href='https://vimeo.com/237150285' target='_blank'>https://vimeo.com/237150285</a></p>
 
 <p>USB has the advantage of being more reliable and not affected by cold temperatures.</p>
 
 <p>Important: the NMX must first be connected via USB, then external power &ndash; if the NMX is powered on before connecting USB, it won&rsquo;t be detected.</p>
 
+<h2 id="emotimo-spectrum-st4">eMotimo Spectrum (ST4)</h2>
+
+<p>The VIEW can fully control the eMotimo ST4 with a USB to serial data cable (a direct AUX2 data connection is also in development).  VIEW Firmware v1.8 or newer is required.  To set this up, use a USB hub to connect both the camera and the ST4 to the VIEW&rsquo;s single USB port, and connect the data cable to the ST4&rsquo;s I/O port.  Make sure to set the I/O port on the ST4 to the eMotimo API.</p>
+
+<p>Setup video: <a href='https://vimeo.com/338113886' target='_blank'>https://vimeo.com/338113886</a></p>
+
 <h2 id="syrp-genie-mini">Syrp Genie Mini</h2>
+
+<aside class="warning">IMPORTANT: Syrp removed support for the VIEW in the new firmware installed by the new Genie II app.  To fix this, connect to the Genie Mini with the older GenieApp (with the VIEW bluetooth turned off so it doesn&rsquo;t interfere) and it will install the old firmware (it may prompt for it).  After the old firmware is installed on the Genie Mini, close the GenieApp and turn the phone&rsquo;s bluetooth off, then re-enable Bluetooth on the VIEW and it should be fully working.</aside>
 
 <p>The VIEW can fully control the Syrp Genie Mini via Bluetooth, allowing for multi-keyframe motion programming.  The latest v1.8 beta firmware is required on the VIEW, and the Genie Mini should also have its firmware up to date.  Note that when controlling the Genie Mini via the VIEW it will not be possible to use the Syrp app at the same time, so it&rsquo;s best to disable BT on the phone to avoid interference.  </p>
 
-<p>To connect the Genie Mini to the VIEW, first enable Bluetooth on the VIEW in Settings-&gt;Wireless Setup-&gt;Enable Bluetooth (if it only shows &ldquo;Disable Bluetooth&rdquo;, then it&rsquo;s already enabled).  Then power on the Genie Mini and watch for a small Bluetooth icon to appear in the top bar in the VIEW&rsquo;s display.  At present, up to two Genie Minis can be connected at once (like for pan/tilt).  Each one can be then configured in the VIEW&rsquo;s wifi app, similar to the NMX setup show here: <a href="https://vimeo.com/237150285">https://vimeo.com/237150285</a>.  Also see <a href="https://vimeo.com/235979676">https://vimeo.com/235979676</a> for a quick setup without the app.</p>
+<p>To connect the Genie Mini to the VIEW, first enable Bluetooth on the VIEW in Settings-&gt;Wireless Setup-&gt;Enable Bluetooth (if it only shows &ldquo;Disable Bluetooth&rdquo;, then it&rsquo;s already enabled).  Then power on the Genie Mini and watch for a small Bluetooth icon to appear in the top bar in the VIEW&rsquo;s display.  At present, up to two Genie Minis can be connected at once (like for pan/tilt).  Each one can be then configured in the VIEW&rsquo;s wifi app, similar to the NMX setup show here: <a href='https://vimeo.com/237150285' target='_blank'>https://vimeo.com/237150285</a>.  Also see <a href='https://vimeo.com/235979676' target='_blank'>https://vimeo.com/235979676</a> for a quick setup without the app.</p>
 
-<p>If preferred, the Genie Mini can also be programmed separately and then synchronized with the VIEW for shoot move shoot functionality.  This is the &ldquo;External Trigger&rdquo; method shown above.  Connect the camera port on the Genie Mini to the AUX2 port in the VIEW with a 2.5mm TRS cable (TRRS will not work) and then set the Interval Mode on the VIEW to &#39;External AUX2&rsquo;.  In this configuration, the VIEW fires each frame when prompted by the Mini while handling ramping, and the Mini manages the motion and interval as defined in the Syrp app.  For a video on how this is setup, see <a href="https://www.facebook.com/syrp.co.nz/videos/1183817961718350/">https://www.facebook.com/syrp.co.nz/videos/1183817961718350/</a></p>
+<p>If preferred, the Genie Mini can also be programmed separately and then synchronized with the VIEW for shoot move shoot functionality.  This is the &ldquo;External Trigger&rdquo; method shown above.  Connect the camera port on the Genie Mini to the AUX2 port in the VIEW with a 2.5mm TRS cable (TRRS will not work) and then set the Interval Mode on the VIEW to &#39;External AUX2&rsquo;.  In this configuration, the VIEW fires each frame when prompted by the Mini while handling ramping, and the Mini manages the motion and interval as defined in the Syrp app.  For a video on how this is setup, see <a href='https://www.facebook.com/syrp.co.nz/videos/1183817961718350/' target='_blank'>https://www.facebook.com/syrp.co.nz/videos/1183817961718350/</a></p>
 
           <h1 id="post-processing">Post Processing</h1>
 
