@@ -125,13 +125,13 @@ Night Lum Target | Target image brightness for day exposure <sup>2</sup>
 
 <sup><b>1</b></sup><i>The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</i>
 
-<sup><b>2</b></sup><i>When starting during the day, the Day Lum Target is not used -- instead, the day brightness is based on the starting frame.  Likewise, when starting at night for a sunrise to day, the Night Lum Target is not used either -- only the day target.
+<sup><b>2</b></sup><i>When starting during the day, the Day Lum Target is not used -- instead, the day brightness is based on the starting frame.  Likewise, when starting at night for a sunrise to day, the Night Lum Target is not used either -- only the day target.</i>
 
-Once the transition begins (sunrise or sunset) the VIEW switches between using the luminance of the starting frame as a target exposure and instead uses the Luminance Target of Night or Day, depending on which is approaching.  So once you've found night/day target values that you like, you don't have to change them.
+<i>Once the transition begins (sunrise or sunset) the VIEW switches between using the luminance of the starting frame as a target exposure and instead uses the Luminance Target of Night or Day, depending on which is approaching.  So once you've found night/day target values that you like, you don't have to change them.</i>
 
-The defaults are to have the Day Target at 0 -- meaning that to the VIEW the image seems to have a balanced exposure, and the Night Lum at -1.3, meaning that the exposure is about 1.3 stops less than balanced, giving the appearance of night.
+<i>The defaults are to have the Day Target at 0 -- meaning that to the VIEW the image seems to have a balanced exposure, and the Night Lum at -1.3, meaning that the exposure is about 1.3 stops less than balanced, giving the appearance of night.</i>
 
-If you did a night to day and thought the ending day exposure was about a stop too dark, increase the Day Lum Target to +1.  Keep in mind, however, it does run a little dark during sunrise to preserve colors and highlights and will brighten some after.</i>
+<i>If you did a night to day and thought the ending day exposure was about a stop too dark, increase the Day Lum Target to +1.  Keep in mind, however, it does run a little dark during sunrise to preserve colors and highlights and will brighten some after.</i>
 
 
 ## Manual Aperture
