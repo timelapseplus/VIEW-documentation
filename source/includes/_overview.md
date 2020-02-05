@@ -6,7 +6,7 @@
 
 ### Power On
 
-To power on the VIEW, press and hold the Power button `(#1)` for 2 seconds.  In a few seconds the button will illuminate red, indicating that it's booting.  The VIEW logo will appear on the screen shortly thereafter. 
+To power on the VIEW, press and hold the Power button `(#1)` for 3 seconds.  It will flash shortly after being pressed and can be released once it's lit solid, indicating that it's booting.  The VIEW logo will appear on the screen shortly thereafter.  It takes a little over a minutes to fully boot. 
 
 ### Power Off
 
@@ -23,7 +23,7 @@ The user interface for the VIEW is a menu based system designed to be simple to 
 
 ### Gesture Sensor
 
-The Gesture Sensor `(#2)` while a time-lapse is running and the screen goes blank.  Wave your hand across the front to activate, then wave to the right to preview the current/last time-lapse, or to the left to cancel.  While the preview is playing, wave to the right to skip ahead 10 seconds.
+The Gesture Sensor `(#2)` while a time-lapse is running and the screen goes blank.  Wave your hand across the front to activate, then wave to the right to preview the current/last time-lapse, or to the left to cancel.  While the preview is playing, wave to the right to skip ahead 10 seconds.  If the gesture sensor does not respond as expected, try calibrating it via Settings->UI Preferences->Calibrate Gesture.
 
 ## Ports and Connections
 
@@ -31,33 +31,33 @@ The Gesture Sensor `(#2)` while a time-lapse is running and the screen goes blan
 
 ### Charging
 
-To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port `(#12)` on the VIEW.  When connected the Charge Indicator `(#11)` will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings->Charge Indicator.  Note that the battery indicator in the VIEW will prematurely show a low battery, and if charging a completely dead battery, it can take some time before progress becomes visible.
+To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port `(#12)` on the VIEW.  When connected the Charge Indicator `(#11)` will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings->Charge Indicator.  Note that the battery indicator in the VIEW will prematurely show a low battery, and if charging a completely dead battery, it can take some time before progress becomes visible.  It can be charged/powered while running.
 
 ### Auxiliary Ports
 
-The VIEW includes two 2.5mm TRS auxiliary ports `(#9, #10)` for motion sync, shutter cable triggering and external integrations.  Currently only AUX2 is used by the firmware.  It will send a pulse to trigger motion systems to move after each shot during a time-lapse (no setup necessary for this), or it can be used as an external trigger for the interval when the time-lapse interval is set to "External".
+The VIEW includes two 2.5mm TRS auxiliary ports `(#9, #10)` for motion sync, shutter cable triggering and external integrations.  Currently only AUX2 is used by the firmware.  It will send a pulse to trigger motion systems to move after each shot during a time-lapse (no setup necessary for this), or it can be used as an external trigger for the interval when the time-lapse interval is set to "External".  See <https://docs.view.tl/#motion-control> for more.
 
 ### SD Card
 
-The SD card slot `(#8)` provides a convenient way to get data from the VIEW.  The VIEW can also save the RAW time-lapse images to the SD card -- this is the most convenient way for post processing, since each time-lapse is named sequentially in its own folder along with the XMP files for automatic deflickering in Lightroom.
+The SD card slot `(#8)` provides a convenient way to save images (<https://docs.view.tl/#sony-alpha-usb>), get data from the VIEW, or update firmware (<https://docs.view.tl/#update-via-sd-card>).
 
 The VIEW supports all current SD card types and capacities, but internally it uses a Class 10 controller, so the newest UHS II cards will not offer a speed improvement over a Class 10 card.  Cards can be formatted with the camera or on a computer as FAT/EXFAT (MSDOS).
 
 ### USB Host
 
-The VIEW includes a full-size USB host port `(#13)` for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX via USB, and multiple camera support is planned for the future).
+The VIEW includes a full-size USB host port `(#13)` for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX and eMotimo ST4 via USB, and multiple cameras are also supported.
 
 ## Hooking up the camera
 
 ### Hotshoe Mount
 
-The VIEW can be conveniently connected to the top of the camera by sliding it on the camera's hotshoe.  This also provides PC-sync feedback for bulb ramping without requiring an additional cable, however, the current exposure ramping mode does not use this, so you can mount the VIEW anywhere without affecting the performance.
+The VIEW can be conveniently connected to the top of the camera by sliding it on the camera's hotshoe.  This also provides PC-sync feedback for ensuring proper shoot-move-shoot operation when used with motion control, however, if you're not using motion control you can mount the VIEW anywhere without affecting the performance.
 
 ### USB Connection
 
 Connect the appropriate USB cable for your camera from the Host Port `(#13)` to your camera's USB port.  It's best to have the camera powered on before connecting, as there seems to be an occasional timing issue causing the camera to not properly connect if powered on while connected.  If the camera doesn't seem to connect, unplug the USB and reconnect.  Sony cameras can be quite flaky -- if you're having trouble, try removing the battery from the camera, powering it back on, and then plugging in the USB to the VIEW again.
 
-Some cameras need to be set to "PC Connect" or "PTP Mode" in order for USB to function properly.  Also, some Canon cameras with WiFi (like the 6D) require WiFi to be disabled for USB control to work.
+Some cameras need to be set to "PC Connect" or "PTP Mode" in order for USB to function properly.  Also, some Canon cameras with WiFi (like the 6D) require WiFi to be disabled for USB control to work. See <https://docs.view.tl/#camera-specific-notes> for more.
 
 Only the USB cable is needed for full ramping support.  No other connections are necessary.
 

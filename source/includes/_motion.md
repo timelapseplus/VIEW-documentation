@@ -6,7 +6,9 @@ The VIEW is able to synchronize with most motion control systems for shoot-move-
 
 To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms "closed" pulse (with default settings) after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., "slave" mode for the NMX, "external intervalometer" for eMotimo TB3).
 
-The pulse parameters can be adjusted in Settings->
+The pulse parameters can be adjusted in Settings->Motion Equipment->AUX2 Sync Setup:
+- Pulse Length: default 100ms, the length of time for the pulse sent after each completed exposure during the time-lapse
+- Invert Pulse: default No.  No means the pulse is represented as a closed connection between the tip and ground for the duration of the pulse length, and is normally open.  Yes means it's normally closed and the pulse is an open connection for the duration of the pulse length.
 
 ## External Trigger
 
@@ -20,6 +22,8 @@ With this configuration, the VIEW handles the exposure and ramping, and the moti
 
 In addition to the above methods, the NMX controller can be connected via USB or Bluetooth for full motion programming.  Motion programming must be done via the mobile app for the VIEW as it is not currently supported by the standalone interface.
 
+The NMX will attempt to automatically detect motor attachement and only show axes with a motor, however, when the NMX power supply is above 12 volts, this is not reliable.  You can manually configure the motor attachment for each axis in Settings->Motion Equipment->Configure NMX on the VIEW.
+
 ### NMX Bluetooth Connection
 
 <i>Note: for this method, the latest v1.8 beta firmware should be installed on the VIEW.</i>  To connect the NMX via Bluetooth, first enable Bluetooth on the VIEW in Settings->Wireless Setup->Enable Bluetooth (if it only shows "Disable Bluetooth", then it's already enabled).  Make sure the NMX app is not connected to the NMX, as this will block the VIEW from connecting (turn BT off on the phone if needed).  With Bluetooth enabled, the VIEW will automatically connect to the first available NMX controller when it is powered on.  A small Bluetooth icon will appear in the top bar of the VIEW once connected.  It can then be setup via the VIEW wifi app as show in this video: <a href='https://vimeo.com/237150285' target='_blank'>https://vimeo.com/237150285</a>
@@ -32,16 +36,15 @@ USB has the advantage of being more reliable and not affected by cold temperatur
 
 Important: the NMX must first be connected via USB, then external power -- if the NMX is powered on before connecting USB, it won't be detected.
 
-
 ## eMotimo Spectrum (ST4)
 
-The VIEW can fully control the eMotimo ST4 with a USB to serial data cable (a direct AUX2 data connection is also in development).  VIEW Firmware v1.8 or newer is required.  To set this up, use a USB hub to connect both the camera and the ST4 to the VIEW's single USB port, and connect the data cable to the ST4's I/O port.  Make sure to set the I/O port on the ST4 to the eMotimo API.
+The VIEW can fully control the eMotimo ST4 with a <a href='https://emotimo.com/collections/accessories/products/usb-to-i-o-port-cable-for-spectrum-st4' target='_blank'>USB to serial data cable</a> (a direct AUX2 data connection is also in development).  VIEW Firmware v1.8 or newer is required.  To set this up, use a USB hub to connect both the camera and the ST4 to the VIEW's single USB port, and connect the data cable to the ST4's I/O port.  Make sure to set the I/O port on the ST4 to the eMotimo API.
 
 Setup video: <a href='https://vimeo.com/338113886' target='_blank'>https://vimeo.com/338113886</a>
 
 ## Syrp Genie Mini
 
-<aside class="warning">IMPORTANT: Syrp removed support for the VIEW in the new firmware installed by the new Genie II app.  To fix this, connect to the Genie Mini with the older GenieApp (with the VIEW bluetooth turned off so it doesn't interfere) and it will install the old firmware (it may prompt for it).  After the old firmware is installed on the Genie Mini, close the GenieApp and turn the phone's bluetooth off, then re-enable Bluetooth on the VIEW and it should be fully working.</aside>
+<aside class="warning">IMPORTANT: Syrp removed support for the VIEW in the new firmware installed by the new Genie II app.  To fix this, connect to the Genie Mini from your phone using the older GenieApp (with the VIEW bluetooth turned off so it doesn't interfere) and it will install the old firmware (it may prompt for it).  After the old firmware is installed on the Genie Mini, close the GenieApp and turn the phone's bluetooth off, then re-enable Bluetooth on the VIEW and it should be fully working.</aside>
 
 The VIEW can fully control the Syrp Genie Mini via Bluetooth, allowing for multi-keyframe motion programming.  The latest v1.8 beta firmware is required on the VIEW, and the Genie Mini should also have its firmware up to date.  Note that when controlling the Genie Mini via the VIEW it will not be possible to use the Syrp app at the same time, so it's best to disable BT on the phone to avoid interference.  
 
