@@ -37,13 +37,13 @@ On the VIEW in the time-lapse setup menu, the Destination must be set to SD card
 
 The Sony A7RII needs longer intervals due to the large file size if using USB.  8 seconds should be good -- shorter might be possible.  Other Sony cameras seem to do ok at 4-5 seconds for a minimum interval.
 
-### 3rd generation Sony Alphas
+### 3rd and 4th generation Sony Alphas
 
-This includes the A7rIII, A9 and A7III.  On these cameras, USB is the recommend connection method over wifi.
+This includes the A7rIV (4th gen), A7rIII, A9 and A7III.  On these cameras, USB is the recommend connection method over wifi.
 
 It is possible to save the RAW images to the camera to improve interval times.  These cameras now also support focus ramping with the VIEW as well.
 
-Setup the following on the camera:
+Setup the following on the camera (3rd gen):
 
 1. RAW + smallest JPEG possible
 2. USB Mode set to 'PC Remote'
@@ -51,6 +51,11 @@ Setup the following on the camera:
 4. Manual mode, in a native ISO (not the ISO numbers with a line over them, nor auto ISO)
 5. Focus set to manual (the back button still works for autofocus, but this prevents it from trying to focus on every shot)
 6. Make sure long exposure noise reduction is disabled
+
+Video for 3rd gen setup: <a href='https://vimeo.com/297232264' target='_blank'>https://vimeo.com/297232264</a>
+Video for 4th gen setup: <a href='https://vimeo.com/386651214' target='_blank'>https://vimeo.com/386651214</a>
+
+Focus ramping with Sony: <a href='https://vimeo.com/387080128' target='_blank'>https://vimeo.com/387080128</a>
 
 
 ## Sony Alpha (Wifi)
@@ -80,6 +85,8 @@ Note: some VIEW devices would not connect to the Nikon D800/D800E until firmware
 
 Make sure the USB mode on the camera is set to PC Tether (for the GH3 & GH4 set it to "Remote Control (PTP)"), in manual mode, RAW, and single-shot burst mode.  For the GH5, GH5S, and G9, firmware v1.8-beta23 or newer is required for the VIEW.
 
+Setup video: <a href='https://vimeo.com/349567517' target='_blank'>https://vimeo.com/349567517</a>
+
 ## Fuji X
 
 Note: Fuji support requires v1.8-beta13 or newer firmware on the VIEW.  Make sure the USB mode on the camera is set to PC Auto.  ISO should be manually set to 200 or higher (160 or higher for the X-T3).
@@ -90,6 +97,8 @@ Some Fuji cameras allow charging while in use via the USB port.  In this case, t
 
 Note: Olympus support requires v1.8-44 or newer firmware on the VIEW.  It has been tested with the E-M1, E-M1 II, and E-M5 II.  Make sure the USB mode on the camera is set to Camera+PC icon.  ISO should be manually set to 200 or higher, with long exposure noise reduction disabled.
 
+Setup video: <a href='https://vimeo.com/351745255' target='_blank'>https://vimeo.com/351745255</a>
+
 
 
 ## Camera Support Overview
@@ -99,19 +108,20 @@ Camera Body | Auto Ramping | Focus Ramping | Liveview | Minimum Ramping Interval
 Nikon DSLRs | Yes              | Yes, most | Yes, most| 3s
 Nikon Z6, Z7 | Yes              | Yes      | Yes      | 3s
 Canon EOS DSLRs | Yes              | Yes, most | Yes, most| 3s
-Canon M50 | Yes              | Yes | Yes | 3s
-Canon R, RP | Yes              | Yes | Yes | 3s
+Canon EOS M50 | Yes              | Yes | Yes | 3s
+Canon EOS R, RP | Yes              | Yes | Yes | 4s
 Sony A7, A6000, A7S | Yes      | No        | No (wifi yes)      | 4-5s via USB, 4-5s via Wifi
 Sony A7R    | Yes              | No        | No (wifi yes)      | 7-8s via USB, 4-5s via Wifi
 Sony A7RII  | Yes              | No        | Yes       | 7-8s via USB, 4-5s via Wifi
 Sony A7II, A6300, A6500, A7SII | Yes | No  | Yes       | 4-5s via USB, 4-5s via Wifi
-Sony A7III, A9 | Yes | No  | Yes       | 3s via USB, 4-5s via Wifi
-Sony A7rIII | Yes | No  | Yes       | 5-6s via USB, 5-6s via Wifi
+Sony A7III, A9 | Yes | Yes  | Yes       | 3s via USB, 4-5s via Wifi
+Sony A7rIII | Yes | Yes  | Yes       | 4-5s via USB, 5-6s via Wifi
+Sony A7rIV | Yes | Yes  | Yes       | 5-6s via USB, 5-6s via Wifi
 Panasonic GH3, GH4 | Yes          | No     | No | 4-7s
 Panasonic GH5, GH5S, G9 | Yes | No     | Yes | 3s
 Fuji X-T1 | Yes | No | Yes | 5-8s
 Fuji X-T2, X-H2, X-T3 | Yes | Yes | Yes | 3s
-Fuji GFX | Yes | Yes | Yes | 4s
+Fuji GFX | Yes | Yes | Yes | 4-5s
 Fuji X-Pro2 | Yes | Yes | Yes | 3-4s
 Olympus OM-D | Yes | Yes | Yes | 3s
 

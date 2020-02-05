@@ -39,4 +39,16 @@ Firmware updates will either fail or succeed -- it won't get stuck in a corrupte
 3. Insert the SD card with the zip file into the VIEW.
 4. On the VIEW, go to Settings->Software Version->Install from SD card to begin installation.  If there is more than one firmware zip file on the SD card, it will automatically select the most recent version.
 
-<aside class="notice">If for some reason the system is corrupted and the VIEW will not boot past the splash screen, the system can be restored by holding the power button for 15 seconds to power off, then insert an SD card with the firmware zip file, power on by pressing the power button for 2 seconds, then hold the enter (middle right) button until the "Updating..." screen appears.  It will then install the firmware from the card and boot up.</aside>
+## Recovery Method
+
+If for some reason the system is corrupted and the VIEW will not boot past the splash screen, the system can likely be restored with the following steps:
+
+1. download a firmware zip file from <a href='https://github.com/timelapseplus/VIEW/releases/' target='_blank'>github.com/timelapseplus/VIEW/releases/</a> and save it to the root folder of an SD card
+    <aside class="notice">Important: the file needs to be the original name and still be a zip file, not an extracted folder.  If you download it multiple times, be sure to remove the added " (2)" or anything like that.  Safari unzips downloads automatically, so you'll need to use a browser other than Safari.</aside>
+
+2. force power off the VIEW by holding the power button for 15 seconds until the red light turns off
+3. insert the SD card with the firmware file into the VIEW
+4. power on the VIEW by pressing the power button for two seconds
+5. within a couple seconds of power on, press and hold the enter (middle right) button for about 20 seconds until the splash screen appears
+
+At the bottom of the screen it should say "Updating...".  After a few minutes, it should be restored.
