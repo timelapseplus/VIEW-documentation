@@ -118,11 +118,13 @@
         
           <h1 id="timelapse-view">Timelapse+ VIEW</h1>
 
-<p>Welcome!  This is the official documentation for the VIEW Intervalometer by Timelapse+.  You can scroll through the entire document or click on the links on the left to jump to a specific section.  If you find errors or if parts are confusing, contact me via <a href="http://www.timelapseplus.com/contact">http://www.timelapseplus.com/contact</a> or make the correction yourself and send a pull request with github here: <a href="https://github.com/timelapseplus/VIEW-documentation">https://github.com/timelapseplus/VIEW-documentation</a></p>
+<p>Welcome!  This is the official documentation for the VIEW Intervalometer by Timelapse+.  You can scroll through the entire document or click on the links on the left to jump to a specific section.  If you find errors or if parts are confusing, contact me via <a href="https://www.timelapseplus.com/contact">https://www.timelapseplus.com/contact</a> or make the correction yourself and send a pull request with github here: <a href="https://github.com/timelapseplus/VIEW-documentation">https://github.com/timelapseplus/VIEW-documentation</a></p>
 
-<p><i>Este documento tambien existe en Español: <a href="http://es.view.tl">http://es.view.tl</a></i></p>
+<p><i>Este documento tambien existe en Español: <a href="https://es.view.tl">https://es.view.tl</a></i></p>
 
-<p>This document is formatted for printing, and can be printed as a PDF for a portable copy.</p>
+<p>This documentation is updated for VIEW firmware v1.8.X.  If you are using an older version, make sure to upgrade: <a href="https://docs.view.tl/#firmware-update">https://docs.view.tl/#firmware-update</a></p>
+
+<p>This document is formatted for printing, and can be printed as a PDF for a portable copy.  It can be found online at <a href="https://docs.view.tl">https://docs.view.tl</a></p>
 
           <h1 id="overview-and-operation">Overview and Operation</h1>
 
@@ -132,7 +134,7 @@
 
 <h3 id="power-on">Power On</h3>
 
-<p>To power on the VIEW, press and hold the Power button <code class="prettyprint">(#1)</code> for 2 seconds.  In a few seconds the button will illuminate red, indicating that it&rsquo;s booting.  The VIEW logo will appear on the screen shortly thereafter. </p>
+<p>To power on the VIEW, press and hold the Power button <code class="prettyprint">(#1)</code> for 3 seconds.  It will flash shortly after being pressed and can be released once it&rsquo;s lit solid, indicating that it&rsquo;s booting.  The VIEW logo will appear on the screen shortly thereafter.  It takes a little over a minutes to fully boot. </p>
 
 <h3 id="power-off">Power Off</h3>
 
@@ -149,7 +151,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h3 id="gesture-sensor">Gesture Sensor</h3>
 
-<p>The Gesture Sensor <code class="prettyprint">(#2)</code> while a time-lapse is running and the screen goes blank.  Wave your hand across the front to activate, then wave to the right to preview the current/last time-lapse, or to the left to cancel.  While the preview is playing, wave to the right to skip ahead 10 seconds.</p>
+<p>The Gesture Sensor <code class="prettyprint">(#2)</code> while a time-lapse is running and the screen goes blank.  Wave your hand across the front to activate, then wave to the right to preview the current/last time-lapse, or to the left to cancel.  While the preview is playing, wave to the right to skip ahead 10 seconds.  If the gesture sensor does not respond as expected, try calibrating it via Settings-&gt;UI Preferences-&gt;Calibrate Gesture.</p>
 
 <h2 id="ports-and-connections">Ports and Connections</h2>
 
@@ -157,33 +159,33 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h3 id="charging">Charging</h3>
 
-<p>To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port <code class="prettyprint">(#12)</code> on the VIEW.  When connected the Charge Indicator <code class="prettyprint">(#11)</code> will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings-&gt;Charge Indicator.  Note that the battery indicator in the VIEW will prematurely show a low battery, and if charging a completely dead battery, it can take some time before progress becomes visible.</p>
+<p>To charge the VIEW, connect a Micro-B USB cable from a USB power supply (USB charger, battery pack or computer) to the charging port <code class="prettyprint">(#12)</code> on the VIEW.  When connected the Charge Indicator <code class="prettyprint">(#11)</code> will illuminate red, blinking while charging, and steady when full.  This light can be disabled in Settings-&gt;Charge Indicator.  Note that the battery indicator in the VIEW will prematurely show a low battery, and if charging a completely dead battery, it can take some time before progress becomes visible.  It can be charged/powered while running.</p>
 
 <h3 id="auxiliary-ports">Auxiliary Ports</h3>
 
-<p>The VIEW includes two 2.5mm TRS auxiliary ports <code class="prettyprint">(#9, #10)</code> for motion sync, shutter cable triggering and external integrations.  Currently only AUX2 is used by the firmware.  It will send a pulse to trigger motion systems to move after each shot during a time-lapse (no setup necessary for this), or it can be used as an external trigger for the interval when the time-lapse interval is set to &ldquo;External&rdquo;.</p>
+<p>The VIEW includes two 2.5mm TRS auxiliary ports <code class="prettyprint">(#9, #10)</code> for motion sync, shutter cable triggering and external integrations.  Currently only AUX2 is used by the firmware.  It will send a pulse to trigger motion systems to move after each shot during a time-lapse (no setup necessary for this), or it can be used as an external trigger for the interval when the time-lapse interval is set to &ldquo;External&rdquo;.  See <a href="https://docs.view.tl/#motion-control">https://docs.view.tl/#motion-control</a> for more.</p>
 
 <h3 id="sd-card">SD Card</h3>
 
-<p>The SD card slot <code class="prettyprint">(#8)</code> provides a convenient way to get data from the VIEW.  The VIEW can also save the RAW time-lapse images to the SD card &ndash; this is the most convenient way for post processing, since each time-lapse is named sequentially in its own folder along with the XMP files for automatic deflickering in Lightroom.</p>
+<p>The SD card slot <code class="prettyprint">(#8)</code> provides a convenient way to save images (<a href="https://docs.view.tl/#sony-alpha-usb">https://docs.view.tl/#sony-alpha-usb</a>), get data from the VIEW, or update firmware (<a href="https://docs.view.tl/#update-via-sd-card">https://docs.view.tl/#update-via-sd-card</a>).</p>
 
 <p>The VIEW supports all current SD card types and capacities, but internally it uses a Class 10 controller, so the newest UHS II cards will not offer a speed improvement over a Class 10 card.  Cards can be formatted with the camera or on a computer as FAT/EXFAT (MSDOS).</p>
 
 <h3 id="usb-host">USB Host</h3>
 
-<p>The VIEW includes a full-size USB host port <code class="prettyprint">(#13)</code> for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX via USB, and multiple camera support is planned for the future).</p>
+<p>The VIEW includes a full-size USB host port <code class="prettyprint">(#13)</code> for connecting the camera.  This port also supports USB hubs for connecting multiple devices (right now it can also communicate with the DP NMX and eMotimo ST4 via USB, and multiple cameras are also supported.</p>
 
 <h2 id="hooking-up-the-camera">Hooking up the camera</h2>
 
 <h3 id="hotshoe-mount">Hotshoe Mount</h3>
 
-<p>The VIEW can be conveniently connected to the top of the camera by sliding it on the camera&rsquo;s hotshoe.  This also provides PC-sync feedback for bulb ramping without requiring an additional cable, however, the current exposure ramping mode does not use this, so you can mount the VIEW anywhere without affecting the performance.</p>
+<p>The VIEW can be conveniently connected to the top of the camera by sliding it on the camera&rsquo;s hotshoe.  This also provides PC-sync feedback for ensuring proper shoot-move-shoot operation when used with motion control, however, if you&rsquo;re not using motion control you can mount the VIEW anywhere without affecting the performance.</p>
 
 <h3 id="usb-connection">USB Connection</h3>
 
 <p>Connect the appropriate USB cable for your camera from the Host Port <code class="prettyprint">(#13)</code> to your camera&rsquo;s USB port.  It&rsquo;s best to have the camera powered on before connecting, as there seems to be an occasional timing issue causing the camera to not properly connect if powered on while connected.  If the camera doesn&rsquo;t seem to connect, unplug the USB and reconnect.  Sony cameras can be quite flaky &ndash; if you&rsquo;re having trouble, try removing the battery from the camera, powering it back on, and then plugging in the USB to the VIEW again.</p>
 
-<p>Some cameras need to be set to &ldquo;PC Connect&rdquo; or &ldquo;PTP Mode&rdquo; in order for USB to function properly.  Also, some Canon cameras with WiFi (like the 6D) require WiFi to be disabled for USB control to work.</p>
+<p>Some cameras need to be set to &ldquo;PC Connect&rdquo; or &ldquo;PTP Mode&rdquo; in order for USB to function properly.  Also, some Canon cameras with WiFi (like the 6D) require WiFi to be disabled for USB control to work. See <a href="https://docs.view.tl/#camera-specific-notes">https://docs.view.tl/#camera-specific-notes</a> for more.</p>
 
 <p>Only the USB cable is needed for full ramping support.  No other connections are necessary.</p>
 
@@ -229,23 +231,25 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 </tbody></table>
 
-<p>I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it&rsquo;s not overexposed!</p>
+<p>I recommend starting an hour before sunset, setting the camera at the lowest ISO, a moderately wide aperture (e.g., f/2.8) and then setting the shutter speed to whatever is needed for a good exposure (maybe 1/3200).  Make sure it&rsquo;s not overexposed!</p>
 
 <p>Then, let it run at least 3 hours after sunset to get a good length and transition.  Or, if you have external power for the camera, go all night until sunrise!</p>
 
+<p>To stop the time-lapse, press the menu (lower right) button while in the time-lapse status screen and then select &ldquo;Stop Time-lapse&rdquo;.</p>
+
 <p>Once the time-lapse is complete, check out the <a href="#post-processing">post-processing</a> section.</p>
 
-<p><sup>1</sup>For older Sony cameras connected via USB, you&rsquo;ll need to set this to &lsquo;SD Card&rsquo; and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).</p>
+<p><sup>1</sup>This setting only appears if there is an SD card in the VIEW.  For older Sony cameras connected via USB, you&rsquo;ll need to set this to &lsquo;SD Card&rsquo; and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).</p>
 
 <h3 id="time-lapse-options-are-described-below">Time-lapse options are described below</h3>
 
 <h2 id="exposure">Exposure</h2>
 
-<p>Puts the camera in liveview mode for adjusting the exposure and focus. Turn the knob to increase/decrease exposure.  Press the enter button to toggle focus mode.  When in focus mode, the liveview image will be cropped to 100%, and the knob will then adjust focus rather than exposure.*</p>
+<p>Puts the camera in liveview mode for adjusting the exposure and focus. Press the menu (lower-right) button to cycle the selection between the settings shown below the image. Turn the knob to increase/decrease selected setting.</p>
 
 <aside class="notice">NOTE: the Exposure feature may not work well on all cameras.  If you have any trouble with it, simply adjust the exposure and focus on the camera before connecting the VIEW.</aside>
 
-<aside class="success">Whether setup via the Exposure menu or in camera, the starting exposure for ramping is very important as it is used for a reference throughout the time-lapse.  Make sure it is not over-exposed, as excessive clipped (overexposed highlights) regions of the image can cause the exposure ramping to be inaccurate.</aside>
+<aside class="success">Whether setup via the Exposure menu or in camera, the starting exposure for ramping is very important as it is used for a reference throughout the time-lapse.  Make sure it is not over-exposed, as excessively clipped (overexposed highlights) regions of the image can cause the exposure ramping to be inaccurate and make smoothing difficult in post-processing.</aside>
 
 <h2 id="timelapse-mode">Timelapse Mode</h2>
 
@@ -290,6 +294,10 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <tr>
 <td>Auto Variable</td>
 <td>This mode will automatically ramp between a Day Interval and a Night Interval and allows for longer shutter speeds at night</td>
+</tr>
+<tr>
+<td>External AUX2</td>
+<td>Use this for synchronization with a motion system where the motion&rsquo;s camera trigger is connected to AUX2 and defines the interval (see <a href="https://docs.view.tl/#external-trigger">https://docs.view.tl/#external-trigger</a>)</td>
 </tr>
 </tbody></table>
 
@@ -376,10 +384,6 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 </thead><tbody>
 <tr>
-<td>Night Exposure</td>
-<td>Relative exposure difference for night vs. day</td>
-</tr>
-<tr>
 <td>Maximum ISO</td>
 <td>Upper ISO limit for auto ramping</td>
 </tr>
@@ -393,7 +397,11 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 </tr>
 <tr>
 <td>Ramp Params</td>
-<td>Which parameters to use for ramping [1]</td>
+<td>Which parameters to use for ramping <sup>1</sup></td>
+</tr>
+<tr>
+<td>Highlight Protection</td>
+<td>When enabled, the VIEW will immediately decrease the exposure by 1/3 stop after each frame where excessive clipping is detected</td>
 </tr>
 <tr>
 <td>Min Aperture</td>
@@ -403,9 +411,25 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <td>Max Aperture</td>
 <td>Maximum aperture to use for ramping, e.g., f11 (shown only if Ramp Params includes aperture)</td>
 </tr>
+<tr>
+<td>Day Lum Target</td>
+<td>Target image brightness for day exposure <sup>2</sup></td>
+</tr>
+<tr>
+<td>Night Lum Target</td>
+<td>Target image brightness for day exposure <sup>2</sup></td>
+</tr>
 </tbody></table>
 
-<p>[1] The &ldquo;balanced&rdquo; option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</p>
+<p><sup>1</sup> The &ldquo;balanced&rdquo; option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</p>
+
+<p><sup>2</sup> When starting during the day, the Day Lum Target is not used &ndash; instead, the day brightness is based on the starting frame.  Likewise, when starting at night for a sunrise to day, the Night Lum Target is not used either &ndash; only the day target.</p>
+
+<p>Once the transition begins (sunrise or sunset) the VIEW switches between using the luminance of the starting frame as a target exposure and instead uses the Luminance Target of Night or Day, depending on which is approaching.  So once you&rsquo;ve found night/day target values that you like, you don&rsquo;t have to change them.</p>
+
+<p>The defaults are to have the Day Target at 0 &ndash; meaning that to the VIEW the image seems to have a balanced exposure, and the Night Lum at -1.3, meaning that the exposure is about 1.3 stops less than balanced, giving the appearance of night.</p>
+
+<p>If you did a night to day and thought the ending day exposure was about a stop too dark, increase the Day Lum Target to +1.  Keep in mind, however, it does run a little dark during sunrise to preserve colors and highlights and will brighten some after.</p>
 
 <h2 id="manual-aperture">Manual Aperture</h2>
 
@@ -427,7 +451,7 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
 <h2 id="destination">Destination</h2>
 
-<p>This option is only shown when an SD card is inserted in the VIEW.  Sony cameras require that the images be saved to the VIEW&rsquo;s SD card.</p>
+<p>This option is only shown when an SD card is inserted in the VIEW.  Older Sony cameras require that the images be saved to the VIEW&rsquo;s SD card (<a href="https://docs.view.tl/#sony-alpha-usb">https://docs.view.tl/#sony-alpha-usb</a>), but otherwise it is recommended to only save to the camera&rsquo;s card</p>
 
 <table><thead>
 <tr>
@@ -448,6 +472,8 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <h2 id="start">START</h2>
 
 <p>If you have all the settings entered, select this option to start the time-lapse!  While it&rsquo;s running, press the enter (middle right) button or wave your hand to the right to review the results in process, or press the menu (lower right) button to stop the time-lapse.</p>
+
+<p>To stop the time-lapse, press the menu (lower right) button while in the time-lapse status screen and then select &ldquo;Stop Time-lapse&rdquo;.</p>
 
           <h1 id="remote-app">Remote App</h1>
 
@@ -854,7 +880,9 @@ Video for 4th gen setup: <a href='https://vimeo.com/386651214' target='_blank'>h
 
 <p>To trigger a motion system to move after each shot, connect a 2.5mm TRS cable from AUX2 on the VIEW to the sync input on the motion system.  The VIEW will send a 200ms &ldquo;closed&rdquo; pulse (with default settings) after the completion of each shot.  No special setup is required on the VIEW.  The motion system needs to support an external intervalometer input, and usually needs to be in a special mode (e.g., &ldquo;slave&rdquo; mode for the NMX, &ldquo;external intervalometer&rdquo; for eMotimo TB3).</p>
 
-<p>The pulse parameters can be adjusted in Settings-&gt;</p>
+<p>The pulse parameters can be adjusted in Settings-&gt;Motion Equipment-&gt;AUX2 Sync Setup:
+- Pulse Length: default 100ms, the length of time for the pulse sent after each completed exposure during the time-lapse
+- Invert Pulse: default No.  No means the pulse is represented as a closed connection between the tip and ground for the duration of the pulse length, and is normally open.  Yes means it&rsquo;s normally closed and the pulse is an open connection for the duration of the pulse length.</p>
 
 <h2 id="external-trigger">External Trigger</h2>
 
@@ -867,6 +895,8 @@ Video for 4th gen setup: <a href='https://vimeo.com/386651214' target='_blank'>h
 <h2 id="dynamic-perception-nmx">Dynamic Perception NMX</h2>
 
 <p>In addition to the above methods, the NMX controller can be connected via USB or Bluetooth for full motion programming.  Motion programming must be done via the mobile app for the VIEW as it is not currently supported by the standalone interface.</p>
+
+<p>The NMX will attempt to automatically detect motor attachement and only show axes with a motor, however, when the NMX power supply is above 12 volts, this is not reliable.  You can manually configure the motor attachment for each axis in Settings-&gt;Motion Equipment-&gt;Configure NMX on the VIEW.</p>
 
 <h3 id="nmx-bluetooth-connection">NMX Bluetooth Connection</h3>
 
@@ -882,13 +912,13 @@ Video for 4th gen setup: <a href='https://vimeo.com/386651214' target='_blank'>h
 
 <h2 id="emotimo-spectrum-st4">eMotimo Spectrum (ST4)</h2>
 
-<p>The VIEW can fully control the eMotimo ST4 with a USB to serial data cable (a direct AUX2 data connection is also in development).  VIEW Firmware v1.8 or newer is required.  To set this up, use a USB hub to connect both the camera and the ST4 to the VIEW&rsquo;s single USB port, and connect the data cable to the ST4&rsquo;s I/O port.  Make sure to set the I/O port on the ST4 to the eMotimo API.</p>
+<p>The VIEW can fully control the eMotimo ST4 with a <a href='https://emotimo.com/collections/accessories/products/usb-to-i-o-port-cable-for-spectrum-st4' target='_blank'>USB to serial data cable</a> (a direct AUX2 data connection is also in development).  VIEW Firmware v1.8 or newer is required.  To set this up, use a USB hub to connect both the camera and the ST4 to the VIEW&rsquo;s single USB port, and connect the data cable to the ST4&rsquo;s I/O port.  Make sure to set the I/O port on the ST4 to the eMotimo API.</p>
 
 <p>Setup video: <a href='https://vimeo.com/338113886' target='_blank'>https://vimeo.com/338113886</a></p>
 
 <h2 id="syrp-genie-mini">Syrp Genie Mini</h2>
 
-<aside class="warning">IMPORTANT: Syrp removed support for the VIEW in the new firmware installed by the new Genie II app.  To fix this, connect to the Genie Mini with the older GenieApp (with the VIEW bluetooth turned off so it doesn&rsquo;t interfere) and it will install the old firmware (it may prompt for it).  After the old firmware is installed on the Genie Mini, close the GenieApp and turn the phone&rsquo;s bluetooth off, then re-enable Bluetooth on the VIEW and it should be fully working.</aside>
+<aside class="warning">IMPORTANT: Syrp removed support for the VIEW in the new firmware installed by the new Genie II app.  To fix this, connect to the Genie Mini from your phone using the older GenieApp (with the VIEW bluetooth turned off so it doesn&rsquo;t interfere) and it will install the old firmware (it may prompt for it).  After the old firmware is installed on the Genie Mini, close the GenieApp and turn the phone&rsquo;s bluetooth off, then re-enable Bluetooth on the VIEW and it should be fully working.</aside>
 
 <p>The VIEW can fully control the Syrp Genie Mini via Bluetooth, allowing for multi-keyframe motion programming.  The latest v1.8 beta firmware is required on the VIEW, and the Genie Mini should also have its firmware up to date.  Note that when controlling the Genie Mini via the VIEW it will not be possible to use the Syrp app at the same time, so it&rsquo;s best to disable BT on the phone to avoid interference.  </p>
 
