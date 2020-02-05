@@ -24,7 +24,7 @@ To stop the time-lapse, press the menu (lower right) button while in the time-la
 
 Once the time-lapse is complete, check out the <a href="#post-processing">post-processing</a> section.
 
-<sup>1</sup>This setting only appears if there is an SD card in the VIEW.  For older Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).
+<sup>1</sup><i>This setting only appears if there is an SD card in the VIEW.  For older Sony cameras connected via USB, you'll need to set this to 'SD Card' and make sure an SD card is in the VIEW.  For other cameras, performance is best when saving directly to the camera.  Sony can save to the camera when connected via WiFi instead of USB (see <a href="#camera-specific-notes">camera-specific notes</a> for more).</i>
 
 ### Time-lapse options are described below
 
@@ -123,15 +123,15 @@ Max Aperture | Maximum aperture to use for ramping, e.g., f11 (shown only if Ram
 Day Lum Target | Target image brightness for day exposure <sup>2</sup>
 Night Lum Target | Target image brightness for day exposure <sup>2</sup>
 
-<sup>1</sup> The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.
+<sup><b>1</b></sup><i>The "balanced" option tries to move shutter and ISO together, to more gradually increase the shutter speed.  The other settings always prioritize the lowest ISO possible.</i>
 
-<sup>2</sup> When starting during the day, the Day Lum Target is not used -- instead, the day brightness is based on the starting frame.  Likewise, when starting at night for a sunrise to day, the Night Lum Target is not used either -- only the day target.
+<sup><b>2</b></sup><i>When starting during the day, the Day Lum Target is not used -- instead, the day brightness is based on the starting frame.  Likewise, when starting at night for a sunrise to day, the Night Lum Target is not used either -- only the day target.
 
 Once the transition begins (sunrise or sunset) the VIEW switches between using the luminance of the starting frame as a target exposure and instead uses the Luminance Target of Night or Day, depending on which is approaching.  So once you've found night/day target values that you like, you don't have to change them.
 
 The defaults are to have the Day Target at 0 -- meaning that to the VIEW the image seems to have a balanced exposure, and the Night Lum at -1.3, meaning that the exposure is about 1.3 stops less than balanced, giving the appearance of night.
 
-If you did a night to day and thought the ending day exposure was about a stop too dark, increase the Day Lum Target to +1.  Keep in mind, however, it does run a little dark during sunrise to preserve colors and highlights and will brighten some after.
+If you did a night to day and thought the ending day exposure was about a stop too dark, increase the Day Lum Target to +1.  Keep in mind, however, it does run a little dark during sunrise to preserve colors and highlights and will brighten some after.</i>
 
 
 ## Manual Aperture
