@@ -1,4 +1,4 @@
-# Remote App
+# Smartphone App Control
 
 The VIEW Intervalometer can be controlled and monitored via an app for mobile devices.  There's also a web-app version so that anything with a web browser can access it, although it's only optimized for mobile-sized screens.  
 
@@ -26,7 +26,6 @@ Regardless of whether you use the native app or the web interface, there are two
 
 * The VIEW needs to be within range of a WiFi access point for internet (you could use a mobile hotspot)
 * Higher latency so you'll see some lag with liveview
-
 
 
 ## Connecting via local Wifi
@@ -89,11 +88,12 @@ The parameters are the same as found on the VIEW itself -- see <http://docs.view
 
 There are a few things the app has in addition to the VIEW:
 
-- Keyframe Motion
-- Delayed Start
-- Scheduled Time-lapse
+- Keyframe Motion - video demonstration: <a href='https://vimeo.com/272661750' target='_blank'>https://vimeo.com/272661750</a>
+- Delayed Start - instead of pressing the start button at the bottom, use the delay button left of it.  Then set the delay and it will automatically start after the delay amount (the app can be closed during the wait).
+- Scheduled Time-lapse - set Enable Scheduling = 'enabled' and then select the days of the week and the daily start/stop time.
 
-Additionally, the app also allows changing parameters of a time-lapse that is running, whether it was started via the app or on the VIEW.
+Additionally, the app also allows changing parameters of a time-lapse that is running, whether it was started via the app or on the VIEW.  While a time-lapse is running, this screen will show the status instead of the setup parameters.  Some of the parameters shown in the time-lapse screen have a blue box around them.  These can be changed while it's running.  Depending on the type of parameter, the change can be made over a series of frames instead of at once.  If a parameter on the status screen is outlines in red instead of blue, it means it's currently applying a change (the change can still be modified if needed).
+
 
 ### TIME-LAPSE CLIPS
 
