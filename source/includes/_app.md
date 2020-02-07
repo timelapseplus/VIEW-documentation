@@ -3,7 +3,8 @@
 The VIEW Intervalometer can be controlled and monitored via an app for mobile devices.  There's also a web-app version so that anything with a web browser can access it, although it's only optimized for mobile-sized screens.  
 
 TL+VIEW app for iOS: <a href='https://apps.apple.com/us/app/tl-view/id1412185976' target='_blank'>https://apps.apple.com/us/app/tl-view/id1412185976</a>
-TL+VIEW app for Android: <a href='https://play.google.com/store/apps/details?id=com.timelapseplus.view' target='_blank'>https://play.google.com/store/apps/details?id=com.timelapseplus.view</a>
+
+And for Android: <a href='https://play.google.com/store/apps/details?id=com.timelapseplus.view' target='_blank'>https://play.google.com/store/apps/details?id=com.timelapseplus.view</a>
 
 Regardless of whether you use the native app or the web interface, there are two methods for connecting to the VIEW from a mobile device: a local WiFi method, and an internet method.
 
@@ -39,12 +40,12 @@ To configure the local WiFi app interface, setup the following on the VIEW:
 
 Then, on the mobile device:
 
-1. Connect to the TL+VIEW WiFi access point*
+1. Connect to the TL+VIEW WiFi access point<sup>1</sup>
 2. Open the TL+VIEW app, or use a web browser and go to 10.0.0.1
 
 The name of the built-in access point can be changed under Settings->Wireless Setup->Set built-in AP Name.
 
-* Note: In v1.8 and newer, a password is required.  The default is "timelapse+" and it can be viewed/changed in Settings->Wireless Setup->Set built-in AP Password
+<sup>1</sup>Note: In v1.8 and newer, a password is required.  The default is "timelapse+" and it can be viewed/changed in Settings->Wireless Setup->Set built-in AP Password
 
 ## Connecting via the Internet
 
