@@ -474,73 +474,74 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 
           <h1 id="remote-app">Remote App</h1>
 
-<p>The VIEW Intervalometer can be controlled and monitored via a web-based app for mobile devices.  Anything with a web browser can access it, but it&rsquo;s only optimized for mobile-sized screens.  There is no app publish in an app store at this point, rather, it is loaded directly from the VIEW itself.</p>
+<p>The VIEW Intervalometer can be controlled and monitored via an app for mobile devices.  There&rsquo;s also a web-app version so that anything with a web browser can access it, although it&rsquo;s only optimized for mobile-sized screens.  </p>
 
-<p>There are two methods for connecting to the VIEW from a mobile device, a local WiFi method, and an internet method.</p>
+<p>TL+VIEW app for iOS: <a href='https://apps.apple.com/us/app/tl-view/id1412185976' target='_blank'>https://apps.apple.com/us/app/tl-view/id1412185976</a>
+TL+VIEW app for Android: <a href='https://play.google.com/store/apps/details?id=com.timelapseplus.view' target='_blank'>https://play.google.com/store/apps/details?id=com.timelapseplus.view</a></p>
 
-<h3 id="local-method-pros">Local Method Pros:</h3>
+<p>Regardless of whether you use the native app or the web interface, there are two methods for connecting to the VIEW from a mobile device: a local WiFi method, and an internet method.</p>
+
+<h3 id="local-wifi-pros">Local WiFi Pros:</h3>
 
 <ul>
 <li>No Internet required, works in remote locations</li>
 <li>Low-latency connections, great with streaming liveview during setup</li>
 </ul>
 
-<h3 id="local-method-cons">Local Method Cons:</h3>
+<h3 id="local-wifi-cons">Local WiFi Cons:</h3>
 
 <ul>
 <li>Only works within WiFi range of the VIEW</li>
-<li>Internet will not function on the mobile device while connected to the VIEW</li>
+<li>Internet will not function on the mobile device while connected to the VIEW&rsquo;s WiFi network</li>
 </ul>
 
-<h3 id="web-method-pros">Web Method Pros:</h3>
+<h3 id="internet-method-pros">Internet Method Pros:</h3>
 
 <ul>
 <li>Access the VIEW from anywhere in the world!</li>
 <li>Mobile device can be connected to the internet as usual</li>
 </ul>
 
-<h3 id="web-method-cons">Web Method Cons:</h3>
+<h3 id="internet-method-cons">Internet Method Cons:</h3>
 
 <ul>
 <li>The VIEW needs to be within range of a WiFi access point for internet (you could use a mobile hotspot)</li>
 <li>Higher latency so you&rsquo;ll see some lag with liveview</li>
 </ul>
 
-<h2 id="local-wifi-method">Local Wifi Method</h2>
+<h2 id="connecting-via-local-wifi">Connecting via local Wifi</h2>
 
 <p><img alt="WiFi Setup Diagram" src="images/view-app-wifi.png" /></p>
 
 <p>To configure the local WiFi app interface, setup the following on the VIEW:</p>
 
 <ol>
-<li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
-<li>Enable Access Point Mode: Settings -&gt; Wireless Setup -&gt; Enable built-in AP (if this setting is missing it means it&rsquo;s already enabled)</li>
+<li>Enable WiFi (if it&rsquo;s not already): Settings-&gt;Wireless Setup-&gt;Enable Wifi</li>
+<li>Enable Access Point Mode: Settings-&gt;Wireless Setup-&gt;Enable built-in AP (if this setting is missing it means it&rsquo;s already enabled)</li>
 </ol>
 
 <p>Then, on the mobile device:</p>
 
 <ol>
 <li>Connect to the TL+VIEW WiFi access point*</li>
-<li>Open a web browser and go to 10.0.0.1</li>
+<li>Open the TL+VIEW app, or use a web browser and go to 10.0.0.1</li>
 </ol>
 
-<p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
-
-<p>The name of the built-in access point can be changed under Settings -&gt; Wireless Setup -&gt; Set built-in AP Name.</p>
+<p>The name of the built-in access point can be changed under Settings-&gt;Wireless Setup-&gt;Set built-in AP Name.</p>
 
 <ul>
 <li>Note: In v1.8 and newer, a password is required.  The default is &ldquo;timelapse+&rdquo; and it can be viewed/changed in Settings-&gt;Wireless Setup-&gt;Set built-in AP Password</li>
 </ul>
 
-<h2 id="remote-internet-method">Remote Internet Method</h2>
+<h2 id="connecting-via-the-internet">Connecting via the Internet</h2>
 
 <p><img alt="Web Setup Diagram" src="images/view-app-web.png" /></p>
 
-<p>To configure the remote web app interface, setup the following on the VIEW:</p>
+<p>To access the VIEW over the internet, setup the following on the VIEW:</p>
 
 <ol>
-<li>Enable WiFi (if it&rsquo;s not already): Settings -&gt; Wireless Setup -&gt; Enable Wifi</li>
-<li>Connect to a nearby access point: Settings -&gt; Wireless Setup -&gt; Connect to Network</li>
+<li>Enable WiFi (if it&rsquo;s not already): Settings-&gt;Wireless Setup-&gt;Enable Wifi</li>
+<li>Connect to a nearby access point: Settings-&gt;Wireless Setup-&gt;Connect to Network</li>
 <li>Enter the password for the network if necessary (make sure it&rsquo;s entered correctly with the correct case).  Use the context button on the lower right to switch between uppercase/lowercase/numbers/symbols.  Press the power button on the password screen for more instructions.</li>
 <li>Once the VIEW connects (only the first time), a number will appear on the screen.  You&rsquo;ll need this for step 4 below.</li>
 </ol>
@@ -548,13 +549,60 @@ press the knob or the Enter button <code class="prettyprint">(#5)</code> to powe
 <p>Then, on the mobile device:</p>
 
 <ol>
-<li>Open a web browser and go to app.view.tl</li>
-<li>Login using your email address.  If you need to register, you&rsquo;ll be asked to create a subdomain (for access as yoursubdomain.view.tl) and a password</li>
+<li>Open the TL+VIEW app or use a web browser and go to <a href='https://app.view.tl' target='_blank'>https://app.view.tl</a></li>
+<li>Login or register using your email address.</li>
 <li>Once logged in, if this is your first time, press &lsquo;Add Device&rsquo; (if you&rsquo;ve done this before, you don&rsquo;t need to again)</li>
-<li>Enter the numbers displayed on the VIEW screen</li>
+<li>Enter the numbers displayed on the top of the VIEW screen (or find them in Information-&gt;Registration &amp; App) &ndash; this links your device to your app account</li>
 </ol>
 
-<p>That&rsquo;s it &ndash; the app will then load in the browser.  On an iPhone, you can save it to the homescreen for convenient use as a full-screen app.</p>
+<h2 id="using-the-app">Using the app</h2>
+
+<p>The app has 4 sections: CAMERA, INTERVALOMETER, TIME-LAPSE CLIPS, and SETTINGS.  To switch between sections, press the menu icon on the upper left of the app, or swipe right from the left edge of the screen to open the menu.</p>
+
+<h3 id="camera">CAMERA</h3>
+
+<p>This section allows manual control of the camera for taking single images, changing settings, and using liveview.  This can function as a remote trigger for the camera.  </p>
+
+<p>Beneath the image box at the top, there is a round LV button on the right &ndash; press this to enable the liveview display.  In the center is a blue button which will capture a single image.  On the left is a 2 second timer &ndash; the camera will capture an image after 2 seconds.</p>
+
+<p>Further down, there are tabs to switch between different controls:
+- Exposure - change the shutter, aperture and ISO on the camera
+- Focus - move the focus position manually (if supported)
+- Motion - move various motion axes (if supported and connected)</p>
+
+<h3 id="intervalometer">INTERVALOMETER</h3>
+
+<p>In this section you can setup, start, and monitor a time-lapse on the VIEW.  Note that once a time-lapse is started from the app, the app does not need to remain connected; it runs independantly on the VIEW.</p>
+
+<p>The parameters are the same as found on the VIEW itself &ndash; see <a href="http://docs.view.tl/#time-lapse-setup">http://docs.view.tl/#time-lapse-setup</a> for details on each parameter.</p>
+
+<p>There are a few things the app has in addition to the VIEW:</p>
+
+<ul>
+<li>Keyframe Motion</li>
+<li>Delayed Start</li>
+<li>Scheduled Time-lapse</li>
+</ul>
+
+<p>Additionally, the app also allows changing parameters of a time-lapse that is running, whether it was started via the app or on the VIEW.</p>
+
+<h3 id="time-lapse-clips">TIME-LAPSE CLIPS</h3>
+
+<p>In this section you can review previous time-lapses capture with the VIEW.  If you tap a time-lapse, it will open and can be played back (in low-res).  </p>
+
+<p>When a time-lapse is open there is a red button on the right to delete the clip (this deletes the low-res preview on the VIEW &ndash; nothing else), and a blue button for copying the settings used from this clip and opening them in the INTERVALOMETER section to create a new time-lapse based on them.</p>
+
+<p>Additionally, if there was a problem with the clip, a copy of the log file can be sent to support to aid in diagnosis of the problem using the link found at the bottom of the screen when viewing a time-lapse clip.  You will then receive an email &ndash; please reply to that email with a description of the problem.</p>
+
+<h3 id="settings">SETTINGS</h3>
+
+<p>The SETTINGS section is somewhat minimal yet, but the following is available:</p>
+
+<ul>
+<li>Pair a new VIEW device (opens a dialog to enter the pairing number on a new device for linking it to your account)</li>
+<li>Configure Motion - this is available when a compatible motion system is connected and includes settings related to the specific motion system</li>
+<li>Logout &ndash; this logs out the current user, in case you need to log back in with a different email or are using a shared system</li>
+</ul>
 
           <h1 id="firmware-update">Firmware Update</h1>
 
